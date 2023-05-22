@@ -8,7 +8,7 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data.SqlClient;
+using MySql.Data.MySqlClient;
 
 namespace Spotify
 {
@@ -206,28 +206,31 @@ namespace Spotify
         {
 
         }
-        static string constr = @"Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=Users;Data Source=DESKTOP-4IC0E7P";
-        static SqlConnection con = new SqlConnection(constr);
+        static string constr = ("Data Source=localhost;port=3306;username=root;password=");
+        static MySqlConnection con = new MySqlConnection(constr);
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            label6.ForeColor = Color.Black;
-            label7.ForeColor = Color.Black;
-            label8.ForeColor = Color.Black;
+            label6.Visible = false;
+            label7.Visible = false;
+            label8.Visible = false;
+            label13.Visible = false;
+            label10.Visible = false;
             try
             {
                 if(guna2TextBox1.Text == "" && guna2TextBox2.Text == "")
                 {
-
+                    label13.Visible = true;
+                    label10.Visible = true;
                 }
                 else { 
                     if (con.State == ConnectionState.Closed){
                         con.Open();
                     
                     }
-                    string query = "select u_username, u_password from personal_info where u_username = '" + guna2TextBox1.Text + "'";
-                    SqlCommand cmd = new SqlCommand(query, con);
-                    SqlDataReader sdr = cmd.ExecuteReader();
+                    string query = "SELECT u_username, u_password FROM spotify.personal_info WHERE u_username = '" + guna2TextBox1.Text + "'";
+                    MySqlCommand cmd = new MySqlCommand(query, con);
+                    MySqlDataReader sdr = cmd.ExecuteReader();
                 
                     if (sdr.HasRows)
                     {
@@ -235,13 +238,18 @@ namespace Spotify
 
                         if (sdr["u_password"].Equals(guna2TextBox2.Text))
                         {
-                        
-                        }else{
-                            label7.ForeColor = Color.Red;
+                            MessageBox.Show("kokot ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                        else{
+                            label7.Visible = true;
                         }
                     }
                     else{
-                        label8.ForeColor = Color.Red;
+                        label8.Visible = true;
+                        if(guna2TextBox2.Text == "")
+                        {
+                            label10.Visible = true;
+                        }
                     }
 
                     con.Close();
@@ -252,7 +260,8 @@ namespace Spotify
             {
                 
                 con.Close();
-                label6.ForeColor = Color.Red;
+                MessageBox.Show(" " + ex + " ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                label6.Visible = true;
             }
         }
 

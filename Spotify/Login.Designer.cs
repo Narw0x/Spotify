@@ -36,10 +36,12 @@
             this.guna2Panel17 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel22 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel28 = new Guna.UI2.WinForms.Guna2Panel();
+            this.label7 = new System.Windows.Forms.Label();
             this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Panel27 = new Guna.UI2.WinForms.Guna2Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.guna2Panel26 = new Guna.UI2.WinForms.Guna2Panel();
+            this.label8 = new System.Windows.Forms.Label();
             this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Panel25 = new Guna.UI2.WinForms.Guna2Panel();
             this.label2 = new System.Windows.Forms.Label();
@@ -87,6 +89,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.guna2Panel50 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel57 = new Guna.UI2.WinForms.Guna2Panel();
+            this.label9 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.guna2Panel56 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel55 = new Guna.UI2.WinForms.Guna2Panel();
@@ -103,9 +106,8 @@
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel54 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel53 = new Guna.UI2.WinForms.Guna2Panel();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             this.guna2Panel9.SuspendLayout();
             this.guna2Panel14.SuspendLayout();
             this.guna2Panel17.SuspendLayout();
@@ -220,13 +222,26 @@
             // 
             // guna2Panel28
             // 
-            this.guna2Panel28.Controls.Add(this.label7);
+            this.guna2Panel28.Controls.Add(this.label10);
             this.guna2Panel28.Controls.Add(this.guna2TextBox2);
             this.guna2Panel28.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel28.Location = new System.Drawing.Point(55, 98);
             this.guna2Panel28.Name = "guna2Panel28";
             this.guna2Panel28.Size = new System.Drawing.Size(414, 48);
             this.guna2Panel28.TabIndex = 4;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.Red;
+            this.label7.Location = new System.Drawing.Point(268, 7);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(143, 20);
+            this.label7.TabIndex = 1;
+            this.label7.Text = "Incorrect password";
+            this.label7.Visible = false;
+            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // guna2TextBox2
             // 
@@ -264,6 +279,7 @@
             // 
             // guna2Panel27
             // 
+            this.guna2Panel27.Controls.Add(this.label7);
             this.guna2Panel27.Controls.Add(this.label3);
             this.guna2Panel27.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel27.Location = new System.Drawing.Point(55, 71);
@@ -286,13 +302,26 @@
             // 
             // guna2Panel26
             // 
-            this.guna2Panel26.Controls.Add(this.label8);
+            this.guna2Panel26.Controls.Add(this.label13);
             this.guna2Panel26.Controls.Add(this.guna2TextBox1);
             this.guna2Panel26.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel26.Location = new System.Drawing.Point(55, 23);
             this.guna2Panel26.Name = "guna2Panel26";
             this.guna2Panel26.Size = new System.Drawing.Size(414, 48);
             this.guna2Panel26.TabIndex = 0;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.Red;
+            this.label8.Location = new System.Drawing.Point(266, 3);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(145, 20);
+            this.label8.TabIndex = 7;
+            this.label8.Text = "Incorrect username";
+            this.label8.Visible = false;
+            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // guna2TextBox1
             // 
@@ -330,6 +359,7 @@
             // 
             // guna2Panel25
             // 
+            this.guna2Panel25.Controls.Add(this.label8);
             this.guna2Panel25.Controls.Add(this.label2);
             this.guna2Panel25.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel25.Location = new System.Drawing.Point(55, 0);
@@ -809,16 +839,27 @@
             this.guna2Panel57.Size = new System.Drawing.Size(184, 29);
             this.guna2Panel57.TabIndex = 3;
             // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.label9.Location = new System.Drawing.Point(1, 4);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(0, 20);
+            this.label9.TabIndex = 1;
+            // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.label6.ForeColor = System.Drawing.Color.Red;
             this.label6.Location = new System.Drawing.Point(2, 3);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(182, 20);
             this.label6.TabIndex = 0;
             this.label6.Text = "Login failed.. Try it again";
+            this.label6.Visible = false;
             this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // guna2Panel56
@@ -955,39 +996,31 @@
             this.guna2Panel53.Size = new System.Drawing.Size(243, 671);
             this.guna2Panel53.TabIndex = 20;
             // 
-            // label7
+            // label13
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.label7.Location = new System.Drawing.Point(268, 15);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(143, 20);
-            this.label7.TabIndex = 1;
-            this.label7.Text = "Incorrect password";
-            this.label7.Click += new System.EventHandler(this.label7_Click);
+            this.label13.AutoSize = true;
+            this.label13.BackColor = System.Drawing.Color.Transparent;
+            this.label13.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.Red;
+            this.label13.Location = new System.Drawing.Point(247, 12);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(160, 20);
+            this.label13.TabIndex = 14;
+            this.label13.Text = "Enter your username!";
+            this.label13.Visible = false;
             // 
-            // label8
+            // label10
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.label8.Location = new System.Drawing.Point(266, 14);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(145, 20);
-            this.label8.TabIndex = 7;
-            this.label8.Text = "Incorrect username";
-            this.label8.Click += new System.EventHandler(this.label8_Click);
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.label9.Location = new System.Drawing.Point(1, 4);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(0, 20);
-            this.label9.TabIndex = 1;
+            this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.Transparent;
+            this.label10.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.Red;
+            this.label10.Location = new System.Drawing.Point(248, 18);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(158, 20);
+            this.label10.TabIndex = 15;
+            this.label10.Text = "Enter your password!";
+            this.label10.Visible = false;
             // 
             // Login
             // 
@@ -1125,6 +1158,8 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label13;
     }
 }
 
