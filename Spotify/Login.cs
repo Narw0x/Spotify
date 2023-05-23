@@ -117,10 +117,10 @@ namespace Spotify
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             this.Hide();
-            var Registerform = new Register();
-            Registerform.Closed += (s, args) => this.Close();
-            Registerform.Show();
-            
+            Register registerform = new Register();
+            registerform.Closed += (s, args) => this.Close();
+            registerform.Show();
+
         }
 
         private void label1_Click_1(object sender, EventArgs e)
@@ -141,7 +141,13 @@ namespace Spotify
 
         private void guna2ToggleSwitch1_CheckedChanged(object sender, EventArgs e)
         {
-
+            if(guna2ToggleSwitch1.Checked == true)
+            {
+                guna2TextBox2.PasswordChar = default;
+            }else if (guna2ToggleSwitch1.Checked == false)
+            {
+                guna2TextBox2.PasswordChar = '*';
+            }
         }
 
         private void guna2Separator1_Click(object sender, EventArgs e)
@@ -189,6 +195,14 @@ namespace Spotify
         private void label8_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.Hide();
+            var forgot_passform = new Forgot_pass();
+            forgot_passform.Closed += (s, args) => this.Close();
+            forgot_passform.Show();
         }
 
         private void label5_Click(object sender, EventArgs e)

@@ -453,5 +453,10 @@ namespace Spotify
         {
 
         }
+
+        public static implicit operator Register(Login v)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

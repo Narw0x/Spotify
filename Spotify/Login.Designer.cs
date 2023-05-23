@@ -36,14 +36,16 @@
             this.guna2Panel17 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel22 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel28 = new Guna.UI2.WinForms.Guna2Panel();
-            this.label7 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Panel27 = new Guna.UI2.WinForms.Guna2Panel();
+            this.label7 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.guna2Panel26 = new Guna.UI2.WinForms.Guna2Panel();
-            this.label8 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
             this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Panel25 = new Guna.UI2.WinForms.Guna2Panel();
+            this.label8 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.guna2Panel24 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel23 = new Guna.UI2.WinForms.Guna2Panel();
@@ -106,8 +108,6 @@
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel54 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel53 = new Guna.UI2.WinForms.Guna2Panel();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
             this.guna2Panel9.SuspendLayout();
             this.guna2Panel14.SuspendLayout();
             this.guna2Panel17.SuspendLayout();
@@ -230,18 +230,18 @@
             this.guna2Panel28.Size = new System.Drawing.Size(414, 48);
             this.guna2Panel28.TabIndex = 4;
             // 
-            // label7
+            // label10
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.Red;
-            this.label7.Location = new System.Drawing.Point(268, 7);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(143, 20);
-            this.label7.TabIndex = 1;
-            this.label7.Text = "Incorrect password";
-            this.label7.Visible = false;
-            this.label7.Click += new System.EventHandler(this.label7_Click);
+            this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.Transparent;
+            this.label10.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.Red;
+            this.label10.Location = new System.Drawing.Point(248, 18);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(158, 20);
+            this.label10.TabIndex = 15;
+            this.label10.Text = "Enter your password!";
+            this.label10.Visible = false;
             // 
             // guna2TextBox2
             // 
@@ -287,6 +287,19 @@
             this.guna2Panel27.Size = new System.Drawing.Size(414, 27);
             this.guna2Panel27.TabIndex = 3;
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.Red;
+            this.label7.Location = new System.Drawing.Point(268, 7);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(143, 20);
+            this.label7.TabIndex = 1;
+            this.label7.Text = "Incorrect password";
+            this.label7.Visible = false;
+            this.label7.Click += new System.EventHandler(this.label7_Click);
+            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -310,18 +323,18 @@
             this.guna2Panel26.Size = new System.Drawing.Size(414, 48);
             this.guna2Panel26.TabIndex = 0;
             // 
-            // label8
+            // label13
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.Red;
-            this.label8.Location = new System.Drawing.Point(266, 3);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(145, 20);
-            this.label8.TabIndex = 7;
-            this.label8.Text = "Incorrect username";
-            this.label8.Visible = false;
-            this.label8.Click += new System.EventHandler(this.label8_Click);
+            this.label13.AutoSize = true;
+            this.label13.BackColor = System.Drawing.Color.Transparent;
+            this.label13.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.Red;
+            this.label13.Location = new System.Drawing.Point(247, 12);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(160, 20);
+            this.label13.TabIndex = 14;
+            this.label13.Text = "Enter your username!";
+            this.label13.Visible = false;
             // 
             // guna2TextBox1
             // 
@@ -366,6 +379,19 @@
             this.guna2Panel25.Name = "guna2Panel25";
             this.guna2Panel25.Size = new System.Drawing.Size(414, 23);
             this.guna2Panel25.TabIndex = 2;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.Red;
+            this.label8.Location = new System.Drawing.Point(266, 3);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(145, 20);
+            this.label8.TabIndex = 7;
+            this.label8.Text = "Incorrect username";
+            this.label8.Visible = false;
+            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // label2
             // 
@@ -429,9 +455,9 @@
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(0, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(112, 20);
+            this.label4.Size = new System.Drawing.Size(118, 20);
             this.label4.TabIndex = 14;
-            this.label4.Text = "Remember me";
+            this.label4.Text = "Show password";
             this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // guna2Panel37
@@ -475,6 +501,7 @@
             this.linkLabel2.TabStop = true;
             this.linkLabel2.Text = "Forgot your password?";
             this.linkLabel2.VisitedLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(255)))), ((int)(((byte)(100)))));
+            this.linkLabel2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
             // 
             // guna2Panel35
             // 
@@ -996,32 +1023,6 @@
             this.guna2Panel53.Size = new System.Drawing.Size(243, 671);
             this.guna2Panel53.TabIndex = 20;
             // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.BackColor = System.Drawing.Color.Transparent;
-            this.label13.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.Color.Red;
-            this.label13.Location = new System.Drawing.Point(247, 12);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(160, 20);
-            this.label13.TabIndex = 14;
-            this.label13.Text = "Enter your username!";
-            this.label13.Visible = false;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.BackColor = System.Drawing.Color.Transparent;
-            this.label10.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.Red;
-            this.label10.Location = new System.Drawing.Point(248, 18);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(158, 20);
-            this.label10.TabIndex = 15;
-            this.label10.Text = "Enter your password!";
-            this.label10.Visible = false;
-            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1099,7 +1100,6 @@
         private Guna.UI2.WinForms.Guna2Panel guna2Panel23;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel19;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel38;
-        private System.Windows.Forms.Label label4;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel37;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel36;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel33;
@@ -1108,7 +1108,6 @@
         private Guna.UI2.WinForms.Guna2Panel guna2Panel34;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel29;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel32;
-        private Guna.UI2.WinForms.Guna2ToggleSwitch guna2ToggleSwitch1;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel31;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel30;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel21;
@@ -1160,6 +1159,8 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label4;
+        private Guna.UI2.WinForms.Guna2ToggleSwitch guna2ToggleSwitch1;
     }
 }
 
