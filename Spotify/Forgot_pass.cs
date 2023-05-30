@@ -1,4 +1,5 @@
-﻿using MySql.Data.MySqlClient;
+﻿using Guna.UI2.WinForms;
+using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -7,6 +8,7 @@ using System.Drawing;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -93,58 +95,27 @@ namespace Spotify
         static MySqlConnection conn = new MySqlConnection(constring);
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            label8.Visible= false;
-            label9.Visible = false;
-            label10.Visible= false;
-            label14.Visible= false;
-            label15.Visible= false;
-            label16.Visible= false;
-            label12.Visible= false;
+
+            label6.Visible = false;
+            label2.Visible = false;
+
+            Color deafault_c = Color.FromArgb(64, 64, 64);
+            Color wrong_c = Color.FromArgb(253, 87, 87);
+
+           
+            guna2TextBox2.BorderColor = deafault_c;            
+            guna2TextBox2.PlaceholderForeColor = deafault_c;           
+            guna2TextBox2.PlaceholderText = "Email";           
+            guna2TextBox2.HoverState.BorderColor = deafault_c;
             try
             {
                 if (guna2TextBox2.Text == "")
                 {
-                    label14.Visible = true;
-                    if (guna2TextBox3.Text == "")
-                    {
-                        label15.Visible = true;
-                    }
-                    if (guna2TextBox4.Text == "")
-                    {
-                        label16.Visible = true;
-                    }
-                    string password1 = guna2TextBox3.Text;
-                    string password2 = guna2TextBox4.Text;
-                    int pass1lenght = password1.Length;
-                    if (password1 == "" || password2 == "")
-                    {
-                        if (password1 == "")
-                        {
-                            label15.Visible = true;
-                        }
-                        if (password2 == "")
-                        {
-                            label16.Visible = true;
-                        }
-                    }
-                    else
-                    {
-                        if (pass1lenght > 8)
-                        {
-                            if (password1 == password2)
-                            {
+                    guna2TextBox2.BorderColor = wrong_c;
+                    guna2TextBox2.PlaceholderForeColor = wrong_c;
+                    guna2TextBox2.PlaceholderText = "Enter your email!";
+                    guna2TextBox2.HoverState.BorderColor = wrong_c;
 
-                            }
-                            else
-                            {
-                                label10.Visible = true;
-                            }
-                        }
-                        else
-                        {
-                            label9.Visible = true;
-                        }
-                    }
                 }
                 else
                 {
@@ -153,58 +124,33 @@ namespace Spotify
                         conn.Open();
 
                     }
-                    string email1_query = "SELECT u_email, u_password FROM spotify.personal_info WHERE u_email = '" + guna2TextBox2.Text + "'";
-                    MySqlCommand cmad1 = new MySqlCommand(email1_query, conn);
-                    MySqlDataReader sdrrr = cmad1.ExecuteReader();
-                    if(sdrrr.HasRows)
+                    string i_email = guna2TextBox2.Text;
+                    string e_pattern1 = @"^[a-zA-Z0-9]+.[a-zA-Z0-9]+@[a-zA-Z0-9]+.[a-zA-Z]{2,}$";
+                    string e_pattern2 = @"^[a-zA-Z0-9]+@[a-zA-Z0-9]+.[a-zA-Z]{2,}$";
+                    if ((Regex.IsMatch(i_email, e_pattern1)) || (Regex.IsMatch(i_email, e_pattern2)))
                     {
 
-                        string password1 = guna2TextBox3.Text;
-                        string password2 = guna2TextBox4.Text;
-                        int pass1lenght = password1.Length;
-                        if (password1 == "" || password2 == "")
+                        string email1_query = "SELECT u_email, u_password FROM spotify.personal_info WHERE u_email = '" + guna2TextBox2.Text + "'";
+                        MySqlCommand cmad1 = new MySqlCommand(email1_query, conn);
+                        MySqlDataReader sdrrr = cmad1.ExecuteReader();
+                        if (sdrrr.HasRows)
                         {
-                            if (password1 == "")
-                            {
-                                label15.Visible = true;
-                            }
-                            if (password2 == "")
-                            {
-                                label16.Visible = true;
-                            }
-                        }
-                        else
-                        {
-                            if (pass1lenght > 8)
-                            {
-                                if (password1 == password2)
-                                {
-                                    if (sdrrr["u_password"] == password1)
-                                    {
-                                        label12.Visible=true;
-                                    }
-                                    else
-                                    {
-                                        sdrrr.Close();
-                                        string u_query = "UPDATE spotify.personal_info SET u_password = '"+ password1 + "' WHERE u_email = '" + guna2TextBox2.Text + "';";
-                                        MySqlCommand u_cmd = new MySqlCommand(u_query, conn); 
-                                        MySqlDataReader u_sdr = u_cmd.ExecuteReader();
-                                        MessageBox.Show("kokot ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                                    }
-                                   
-                                }
-                                else
-                                {
-                                    label10.Visible = true;
-                                }
-                            }
-                            else
-                            {
-                                label15.Visible = true;
-                                label16.Visible = true;
-                            }
+                            label2.Visible = true;
+
+                            //treba tu dorobit sendovanie emailov
+
                         }
                     }
+                    else
+                    {
+                        guna2TextBox2.BorderColor = wrong_c;
+                        guna2TextBox2.PlaceholderForeColor = wrong_c;
+                        guna2TextBox2.PlaceholderText = "Email is not valid!";
+                        guna2TextBox2.HoverState.BorderColor = wrong_c;
+                        guna2TextBox2.Text = string.Empty;
+                        
+                    }
+                    conn.Close();
                 }
 
 
