@@ -8,6 +8,7 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Guna.UI2.WinForms;
 using MySql.Data.MySqlClient;
 
 namespace Spotify
@@ -225,17 +226,31 @@ namespace Spotify
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            label6.Visible = false;
-            label7.Visible = false;
-            label8.Visible = false;
-            label13.Visible = false;
-            label10.Visible = false;
+            Color deafault_c = Color.FromArgb(64, 64, 64);
+            Color wrong_c = Color.FromArgb(253, 87, 87);
+
+
+            guna2TextBox1.BorderColor = deafault_c;
+            guna2TextBox2.BorderColor = deafault_c;
+            guna2TextBox1.PlaceholderForeColor = deafault_c;
+            guna2TextBox2.PlaceholderForeColor = deafault_c;
+            guna2TextBox1.PlaceholderText = "Username";
+            guna2TextBox2.PlaceholderText = "Password";
+            guna2TextBox1.HoverState.BorderColor = deafault_c;
+            guna2TextBox2.HoverState.BorderColor = deafault_c;
+
             try
             {
                 if(guna2TextBox1.Text == "" && guna2TextBox2.Text == "")
                 {
-                    label13.Visible = true;
-                    label10.Visible = true;
+                    guna2TextBox1.BorderColor = wrong_c;
+                    guna2TextBox2.BorderColor = wrong_c;
+                    guna2TextBox1.PlaceholderForeColor = wrong_c;
+                    guna2TextBox2.PlaceholderForeColor = wrong_c;
+                    guna2TextBox1.PlaceholderText = "Enter your username!";
+                    guna2TextBox2.PlaceholderText = "Enter your password!";
+                    guna2TextBox1.HoverState.BorderColor = wrong_c;
+                    guna2TextBox2.HoverState.BorderColor = wrong_c;
                 }
                 else { 
                     if (con.State == ConnectionState.Closed){
@@ -255,14 +270,24 @@ namespace Spotify
                             MessageBox.Show("kokot ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
                         else{
-                            label7.Visible = true;
+                            guna2TextBox2.BorderColor = wrong_c;
+                            guna2TextBox2.PlaceholderForeColor = wrong_c;
+                            guna2TextBox2.PlaceholderText = "Incorrect password";
+                            guna2TextBox2.HoverState.BorderColor = wrong_c;
                         }
                     }
                     else{
-                        label8.Visible = true;
-                        if(guna2TextBox2.Text == "")
-                        {
-                            label10.Visible = true;
+                        guna2TextBox1.BorderColor = wrong_c;
+                        guna2TextBox1.PlaceholderForeColor = wrong_c;
+                        guna2TextBox1.PlaceholderText = "Incorrect username!";
+                        guna2TextBox1.HoverState.BorderColor = wrong_c;
+                        guna2TextBox1.Text = string.Empty;
+                        if (guna2TextBox2.Text == "")
+                        {                           
+                            guna2TextBox2.BorderColor = wrong_c;                           
+                            guna2TextBox2.PlaceholderForeColor = wrong_c;                           
+                            guna2TextBox2.PlaceholderText = "Enter your password!";
+                            guna2TextBox2.HoverState.BorderColor = wrong_c;
                         }
                     }
 

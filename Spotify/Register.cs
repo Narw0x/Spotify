@@ -11,6 +11,7 @@ using System.Windows.Forms;
 using System.ComponentModel.DataAnnotations;
 using MySql.Data.MySqlClient;
 using System.Text.RegularExpressions;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace Spotify
 {
@@ -85,66 +86,88 @@ namespace Spotify
         static MySqlConnection conn = new MySqlConnection(constring);
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            label7.Visible = false;
-            label8.Visible = false;
-            label9.Visible = false;
-            label10.Visible = false;
-            label13.Visible = false;
-            label14.Visible = false;
-            label15.Visible = false;
-            label16.Visible = false;
+            Color deafault_c  = Color.FromArgb(64,64,64);
+            Color wrong_c = Color.FromArgb(253,87,87);
+
+
+            guna2TextBox1.BorderColor = deafault_c;
+            guna2TextBox2.BorderColor = deafault_c;
+            guna2TextBox3.BorderColor = deafault_c;
+            guna2TextBox4.BorderColor = deafault_c;
+            guna2TextBox1.PlaceholderForeColor = deafault_c;
+            guna2TextBox2.PlaceholderForeColor = deafault_c;
+            guna2TextBox3.PlaceholderForeColor = deafault_c;
+            guna2TextBox4.PlaceholderForeColor = deafault_c;
+            guna2TextBox1.PlaceholderText = "Username";
+            guna2TextBox2.PlaceholderText = "Email";
+            guna2TextBox3.PlaceholderText = "Password";
+            guna2TextBox4.PlaceholderText = "Password again";
+            guna2TextBox1.HoverState.BorderColor = deafault_c;
+            guna2TextBox2.HoverState.BorderColor = deafault_c;
+            guna2TextBox3.HoverState.BorderColor = deafault_c;
+            guna2TextBox4.HoverState.BorderColor = deafault_c;
+
+
             try
             {
                 if (guna2TextBox1.Text == "")
                 {
-                    label13.Visible = true;
+                    guna2TextBox1.BorderColor = wrong_c;
+                    guna2TextBox1.HoverState.BorderColor = wrong_c;
+                    guna2TextBox1.PlaceholderForeColor = wrong_c;
+                    guna2TextBox1.PlaceholderText = "Enter your username!";
                     if (guna2TextBox2.Text == "")
                     {
-                        label14.Visible = true;
+                        guna2TextBox2.BorderColor = wrong_c;
+                        guna2TextBox2.HoverState.BorderColor = wrong_c;
+                        guna2TextBox2.PlaceholderForeColor = wrong_c;
+                        guna2TextBox2.PlaceholderText = "Enter your email!";
 
                     }
                     if (guna2TextBox3.Text == "")
                     {
-                        label15.Visible = true;
+                        guna2TextBox3.BorderColor = wrong_c;
+                        guna2TextBox3.HoverState.BorderColor = wrong_c;
+                        guna2TextBox3.PlaceholderForeColor = wrong_c;
+                        guna2TextBox3.PlaceholderText = "Enter your password!";
 
                     }
                     if (guna2TextBox4.Text == "")
                     {
-                        label16.Visible = true;
+                        guna2TextBox4.BorderColor = wrong_c;
+                        guna2TextBox4.HoverState.BorderColor = wrong_c;
+                        guna2TextBox4.PlaceholderForeColor = wrong_c;
+                        guna2TextBox4.PlaceholderText = "Enter your password!";
 
                     }
                     string password1 = guna2TextBox3.Text;
                     string password2 = guna2TextBox4.Text;
                     int pass1lenght = password1.Length;
-                    if (password1 == "" || password2 == "")
+
+                    if (pass1lenght > 8)
                     {
-                        if (password1 == "")
+                        if (password1 == password2)
                         {
-                            label15.Visible = true;
+
                         }
-                        if (password2 == "")
+                        else
                         {
-                            label16.Visible = true;
+                            guna2TextBox4.BorderColor = wrong_c;
+                            guna2TextBox4.HoverState.BorderColor = wrong_c;
+                            guna2TextBox4.PlaceholderForeColor = wrong_c;
+                            guna2TextBox4.PlaceholderText = "Passwords don´t match";
+                            guna2TextBox4.Text = string.Empty;
                         }
                     }
                     else
                     {
-                        if (pass1lenght > 8)
-                        {
-                            if (password1 == password2)
-                            {
-
-                            }
-                            else
-                            {
-                                label10.Visible = true;
-                            }
-                        }
-                        else
-                        {
-                            label9.Visible = true;
-                        }
+                        guna2TextBox3.BorderColor = wrong_c;
+                        guna2TextBox3.HoverState.BorderColor = wrong_c;
+                        guna2TextBox3.PlaceholderForeColor = wrong_c;
+                        guna2TextBox3.PlaceholderText = "Password is too short";
+                        guna2TextBox3.Text = string.Empty;
                     }
+                    
                 }
                 else
                 {
@@ -158,20 +181,31 @@ namespace Spotify
                     MySqlDataReader sdr = cmd.ExecuteReader();
                     if (sdr.HasRows)
                     {
-                        label7.Visible = true;
+                        guna2TextBox1.BorderColor = wrong_c;
+                        guna2TextBox1.HoverState.BorderColor = wrong_c;
+                        guna2TextBox1.PlaceholderForeColor = wrong_c;
+                        guna2TextBox1.PlaceholderText = "Username already exist!";
+                        guna2TextBox1.Text = string.Empty;
 
                         sdr.Close();
-                        string email_query = "SELECT u_emailFROM spotify.personal_info WHERE u_email = '" + guna2TextBox2.Text + "'";
+                        string email_query = "SELECT u_email FROM spotify.personal_info WHERE u_email = '" + guna2TextBox2.Text + "'";
                         MySqlCommand cmad = new MySqlCommand(email_query, conn);
                         MySqlDataReader sdrr = cmad.ExecuteReader();
                         if (sdrr.HasRows)
                         {
-                            label8.Visible = true;
+                            guna2TextBox2.BorderColor = wrong_c;
+                            guna2TextBox2.HoverState.BorderColor = wrong_c;
+                            guna2TextBox2.PlaceholderForeColor = wrong_c;
+                            guna2TextBox2.PlaceholderText = "Email already exist!";
+                            guna2TextBox2.Text = string.Empty;
 
                         }
                         if (guna2TextBox2.Text == "")
                         {
-                            label14.Visible = true;
+                            guna2TextBox2.BorderColor = wrong_c;
+                            guna2TextBox2.HoverState.BorderColor = wrong_c;
+                            guna2TextBox2.PlaceholderForeColor = wrong_c;
+                            guna2TextBox2.PlaceholderText = "Enter your email!";
                         }
                         string password1 = guna2TextBox3.Text;
                         string password2 = guna2TextBox4.Text;
@@ -180,11 +214,17 @@ namespace Spotify
                         {
                             if (password1 == "")
                             {
-                                label15.Visible = true;
+                                guna2TextBox3.BorderColor = wrong_c;
+                                guna2TextBox3.HoverState.BorderColor = wrong_c;
+                                guna2TextBox3.PlaceholderForeColor = wrong_c;
+                                guna2TextBox3.PlaceholderText = "Enter your password!";
                             }
                             if (password2 == "")
                             {
-                                label16.Visible = true;
+                                guna2TextBox4.BorderColor = wrong_c;
+                                guna2TextBox4.HoverState.BorderColor = wrong_c;
+                                guna2TextBox4.PlaceholderForeColor = wrong_c;
+                                guna2TextBox4.PlaceholderText = "Enter your password!";
                             }
                         }
                         else
@@ -197,13 +237,22 @@ namespace Spotify
                                 }
                                 else
                                 {
-                                    label10.Visible = true;
+                                    guna2TextBox4.BorderColor = wrong_c;
+                                    guna2TextBox4.PlaceholderForeColor = wrong_c;
+                                    guna2TextBox4.PlaceholderText = "Passwords don´t match";
+                                    guna2TextBox4.Text = string.Empty;
                                 }
                             }
                             else
                             {
-                                label15.Visible = true;
-                                label16.Visible = true;
+                                guna2TextBox3.BorderColor = wrong_c;
+                                guna2TextBox3.HoverState.BorderColor = wrong_c;
+                                guna2TextBox3.PlaceholderForeColor = wrong_c;
+                                guna2TextBox3.PlaceholderText = "Enter your password!";
+                                guna2TextBox4.BorderColor = wrong_c;
+                                guna2TextBox4.HoverState.BorderColor = wrong_c;
+                                guna2TextBox4.PlaceholderForeColor = wrong_c;
+                                guna2TextBox4.PlaceholderText = "Enter your password!";
                             }
                         }
 
@@ -212,15 +261,24 @@ namespace Spotify
                     {
                         if (guna2TextBox2.Text == "")
                         {
-                            label14.Visible = true;
+                            guna2TextBox2.BorderColor = wrong_c;
+                            guna2TextBox2.HoverState.BorderColor = wrong_c;
+                            guna2TextBox2.PlaceholderForeColor = wrong_c;
+                            guna2TextBox2.PlaceholderText = "Enter your email!";
                             if (guna2TextBox3.Text == "")
                             {
-                                label15.Visible = true;
+                                guna2TextBox3.BorderColor = wrong_c;
+                                guna2TextBox3.HoverState.BorderColor = wrong_c;
+                                guna2TextBox3.PlaceholderForeColor = wrong_c;
+                                guna2TextBox3.PlaceholderText = "Enter your password!";
 
                             }
                             if (guna2TextBox4.Text == "")
                             {
-                                label16.Visible = true;
+                                guna2TextBox4.BorderColor = wrong_c;
+                                guna2TextBox4.HoverState.BorderColor = wrong_c;
+                                guna2TextBox4.PlaceholderForeColor = wrong_c;
+                                guna2TextBox4.PlaceholderText = "Enter your password!";
 
                             }
                             string password1 = guna2TextBox3.Text;
@@ -230,11 +288,17 @@ namespace Spotify
                             {
                                 if (password1 == "")
                                 {
-                                    label15.Visible = true;
+                                    guna2TextBox3.BorderColor = wrong_c;
+                                    guna2TextBox3.HoverState.BorderColor = wrong_c;
+                                    guna2TextBox3.PlaceholderForeColor = wrong_c;
+                                    guna2TextBox3.PlaceholderText = "Enter your password!";
                                 }
                                 if (password2 == "")
                                 {
-                                    label16.Visible = true;
+                                    guna2TextBox4.BorderColor = wrong_c;
+                                    guna2TextBox4.HoverState.BorderColor = wrong_c;
+                                    guna2TextBox4.PlaceholderForeColor = wrong_c;
+                                    guna2TextBox4.PlaceholderText = "Enter your password!";
                                 }
                             }
                             else
@@ -247,12 +311,20 @@ namespace Spotify
                                     }
                                     else
                                     {
-                                        label10.Visible = true;
+                                        guna2TextBox4.BorderColor = wrong_c;
+                                        guna2TextBox4.HoverState.BorderColor = wrong_c;
+                                        guna2TextBox4.PlaceholderForeColor = wrong_c;
+                                        guna2TextBox4.PlaceholderText = "Passwords don´t match";
+                                        guna2TextBox4.Text = string.Empty;
                                     }
                                 }
                                 else
                                 {
-                                    label9.Visible = true;
+                                    guna2TextBox3.BorderColor = wrong_c;
+                                    guna2TextBox3.HoverState.BorderColor = wrong_c;
+                                    guna2TextBox3.PlaceholderForeColor = wrong_c;
+                                    guna2TextBox3.PlaceholderText = "Password is too short";
+                                    guna2TextBox3.Text = string.Empty;
                                 }
                             }
                         }
@@ -264,7 +336,11 @@ namespace Spotify
                             MySqlDataReader sdrr = cmad.ExecuteReader();
                             if (sdrr.HasRows)
                             {
-                                label8.Visible = true;
+                                guna2TextBox2.BorderColor = wrong_c;
+                                guna2TextBox2.HoverState.BorderColor = wrong_c;
+                                guna2TextBox2.PlaceholderForeColor = wrong_c;
+                                guna2TextBox2.PlaceholderText = "Email already exist!";
+                                guna2TextBox2.Text = string.Empty;
                                 string password1 = guna2TextBox3.Text;
                                 string password2 = guna2TextBox4.Text;
                                 int pass1lenght = password1.Length;
@@ -272,11 +348,17 @@ namespace Spotify
                                 {
                                     if (password1 == "")
                                     {
-                                        label15.Visible = true;
+                                        guna2TextBox3.BorderColor = wrong_c;
+                                        guna2TextBox3.HoverState.BorderColor = wrong_c;
+                                        guna2TextBox3.PlaceholderForeColor = wrong_c;
+                                        guna2TextBox3.PlaceholderText = "Enter your password!";
                                     }
                                     if (password2 == "")
                                     {
-                                        label16.Visible = true;
+                                        guna2TextBox4.BorderColor = wrong_c;
+                                        guna2TextBox4.HoverState.BorderColor = wrong_c;
+                                        guna2TextBox4.PlaceholderForeColor = wrong_c;
+                                        guna2TextBox4.PlaceholderText = "Enter your password!";
                                     }
                                 }
                                 else
@@ -289,13 +371,22 @@ namespace Spotify
                                         }
                                         else
                                         {
-                                            label10.Visible = true;
+                                            guna2TextBox4.BorderColor = wrong_c;
+                                            guna2TextBox4.HoverState.BorderColor = wrong_c;
+                                            guna2TextBox4.PlaceholderForeColor = wrong_c;
+                                            guna2TextBox4.PlaceholderText = "Passwords don´t match";
                                         }
                                     }
                                     else
                                     {
-                                        label15.Visible = true;
-                                        label16.Visible = true;
+                                        guna2TextBox3.BorderColor = wrong_c;
+                                        guna2TextBox3.HoverState.BorderColor = wrong_c;
+                                        guna2TextBox3.PlaceholderForeColor = wrong_c;
+                                        guna2TextBox3.PlaceholderText = "Enter your password!";
+                                        guna2TextBox4.BorderColor = wrong_c;
+                                        guna2TextBox4.HoverState.BorderColor = wrong_c;
+                                        guna2TextBox4.PlaceholderForeColor = wrong_c;
+                                        guna2TextBox4.PlaceholderText = "Enter your password!";
                                     }
                                 }
                             }
@@ -310,11 +401,24 @@ namespace Spotify
                                 {
                                     if (password1 == "")
                                     {
-                                        label15.Visible = true;
+                                        guna2TextBox3.BorderColor = wrong_c;
+                                        guna2TextBox3.HoverState.BorderColor = wrong_c;
+                                        guna2TextBox3.PlaceholderForeColor = wrong_c;
+                                        guna2TextBox3.PlaceholderText = "Enter your password!";
+                                        if (password2 == "")
+                                        {
+                                            guna2TextBox4.BorderColor = wrong_c;
+                                            guna2TextBox4.HoverState.BorderColor = wrong_c;
+                                            guna2TextBox4.PlaceholderForeColor = wrong_c;
+                                            guna2TextBox4.PlaceholderText = "Enter your password!";
+                                        }
                                     }
                                     if (password2 == "")
                                     {
-                                        label16.Visible = true;
+                                        guna2TextBox4.BorderColor = wrong_c;
+                                        guna2TextBox4.HoverState.BorderColor = wrong_c;
+                                        guna2TextBox4.PlaceholderForeColor = wrong_c;
+                                        guna2TextBox4.PlaceholderText = "Enter your password!";
                                     }
                                 }
                                 else
@@ -352,12 +456,20 @@ namespace Spotify
                                         }
                                         else
                                         {
-                                            label10.Visible = true;
+                                            guna2TextBox4.BorderColor = wrong_c;
+                                            guna2TextBox4.HoverState.BorderColor = wrong_c;
+                                            guna2TextBox4.PlaceholderForeColor = wrong_c;
+                                            guna2TextBox4.PlaceholderText = "Passwords don´t match";
+                                            guna2TextBox4.Text = string.Empty;
                                         }
                                     }
                                     else
                                     {
-                                        label9.Visible = true;
+                                        guna2TextBox3.BorderColor = wrong_c;
+                                        guna2TextBox3.HoverState.BorderColor = wrong_c;
+                                        guna2TextBox3.PlaceholderForeColor = wrong_c;
+                                        guna2TextBox3.PlaceholderText = "Password is too short";
+                                        guna2TextBox3.Text = string.Empty;
 
                                     }
                                 }
