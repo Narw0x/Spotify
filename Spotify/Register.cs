@@ -442,16 +442,16 @@ namespace Spotify
                                                     string i_query = "INSERT INTO spotify.personal_info(u_username,u_email,u_password) VALUES('"+ i_username + "', '"+ i_email + "', '"+ i_password + "');";
                                                     MySqlCommand i_cmd = new MySqlCommand(i_query, conn);
                                                     MySqlDataReader i_sdr = i_cmd.ExecuteReader();
-                                                    MessageBox.Show("kokot ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                                    MessageBox.Show("uspech ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                                                 }
                                                 else
                                                 {
-                                                    MessageBox.Show("kokotdasdas ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                                    MessageBox.Show("zly email", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                                                 }
                                             }
                                             else
                                             {
-                                                MessageBox.Show("kokotdasdsadasdassdadasdasdasdsaasda ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                                MessageBox.Show("zle meno", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                                             }
                                         }
                                         else

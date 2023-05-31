@@ -267,7 +267,7 @@ namespace Spotify
 
                         if (sdr["u_password"].Equals(guna2TextBox2.Text))
                         {
-                            MessageBox.Show("kokot ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            MessageBox.Show("Si registrovany", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
                         else{
                             guna2TextBox2.BorderColor = wrong_c;
