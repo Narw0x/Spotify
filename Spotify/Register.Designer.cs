@@ -714,6 +714,7 @@
             // 
             // guna2Panel19
             // 
+            this.guna2Panel19.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.guna2Panel19.Controls.Add(this.guna2Panel7);
             this.guna2Panel19.Controls.Add(this.guna2Panel6);
             this.guna2Panel19.Controls.Add(this.guna2Panel9);
@@ -835,9 +836,9 @@
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox4;
         private System.Windows.Forms.Label label6;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox3;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel7;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel6;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel7;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel6;
     }
 }

@@ -6,11 +6,14 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Net.Mail;
+using System.Net;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Net.Mail;
 
 namespace Spotify
 {
@@ -130,7 +133,7 @@ namespace Spotify
                     if ((Regex.IsMatch(i_email, e_pattern1)) || (Regex.IsMatch(i_email, e_pattern2)))
                     {
 
-                        string email1_query = "SELECT u_email, u_password FROM spotify.personal_info WHERE u_email = '" + guna2TextBox2.Text + "'";
+                        string email1_query = "SELECT u_email FROM spotify.personal_info WHERE u_email = '" + guna2TextBox2.Text + "'";
                         MySqlCommand cmad1 = new MySqlCommand(email1_query, conn);
                         MySqlDataReader sdrrr = cmad1.ExecuteReader();
                         if (sdrrr.HasRows)
@@ -138,6 +141,14 @@ namespace Spotify
                             label2.Visible = true;
 
                             //treba tu dorobit sendovanie emailov
+                            MailMessage mail = new MailMessage("spotify.real100@gmail.com", guna2TextBox2.Text, "Zmena hesla na 100% real spotify", "Momentalne to nefunguje sorry broooooooooooo");
+                            using (SmtpClient smtp = new SmtpClient("smtp.gmail.com", 587))
+                            {
+                                smtp.UseDefaultCredentials = false;
+                                smtp.Credentials = new NetworkCredential("spotify.real100@gmail.com", "bmwnxnfpamymessw");
+                                smtp.EnableSsl = true;
+                                smtp.Send(mail);
+                            }
 
                         }
                     }

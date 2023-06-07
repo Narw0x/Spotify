@@ -38,9 +38,11 @@
             this.guna2Panel14 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel17 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel22 = new Guna.UI2.WinForms.Guna2Panel();
+            this.label2 = new System.Windows.Forms.Label();
             this.guna2Panel28 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Panel27 = new Guna.UI2.WinForms.Guna2Panel();
+            this.label6 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.guna2Panel24 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel23 = new Guna.UI2.WinForms.Guna2Panel();
@@ -55,10 +57,8 @@
             this.guna2Separator2 = new Guna.UI2.WinForms.Guna2Separator();
             this.guna2Panel10 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel6 = new Guna.UI2.WinForms.Guna2Panel();
-            this.label6 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.guna2Panel1.SuspendLayout();
             this.guna2Panel9.SuspendLayout();
             this.guna2Panel14.SuspendLayout();
@@ -111,6 +111,7 @@
             // 
             // guna2Panel1
             // 
+            this.guna2Panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.guna2Panel1.Controls.Add(this.guna2Panel8);
             this.guna2Panel1.Controls.Add(this.guna2Panel7);
             this.guna2Panel1.Controls.Add(this.guna2Panel9);
@@ -181,6 +182,18 @@
             this.guna2Panel22.Size = new System.Drawing.Size(510, 245);
             this.guna2Panel22.TabIndex = 2;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(255)))), ((int)(((byte)(100)))));
+            this.label2.Location = new System.Drawing.Point(111, 174);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(302, 20);
+            this.label2.TabIndex = 15;
+            this.label2.Text = "We send you email to reset yor password!";
+            this.label2.Visible = false;
+            // 
             // guna2Panel28
             // 
             this.guna2Panel28.Controls.Add(this.guna2TextBox2);
@@ -232,6 +245,18 @@
             this.guna2Panel27.Name = "guna2Panel27";
             this.guna2Panel27.Size = new System.Drawing.Size(414, 85);
             this.guna2Panel27.TabIndex = 3;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.Red;
+            this.label6.Location = new System.Drawing.Point(98, 32);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(225, 20);
+            this.label6.TabIndex = 14;
+            this.label6.Text = "Reset failed... try it again later!";
+            this.label6.Visible = false;
             // 
             // label3
             // 
@@ -378,18 +403,6 @@
             this.guna2Panel6.Size = new System.Drawing.Size(618, 195);
             this.guna2Panel6.TabIndex = 18;
             // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.Red;
-            this.label6.Location = new System.Drawing.Point(98, 32);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(225, 20);
-            this.label6.TabIndex = 14;
-            this.label6.Text = "Reset failed... try it again later!";
-            this.label6.Visible = false;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -411,18 +424,6 @@
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox1.TabIndex = 3;
             this.guna2PictureBox1.TabStop = false;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(255)))), ((int)(((byte)(100)))));
-            this.label2.Location = new System.Drawing.Point(111, 174);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(302, 20);
-            this.label2.TabIndex = 15;
-            this.label2.Text = "We send you email to reset yor password!";
-            this.label2.Visible = false;
             // 
             // Forgot_pass
             // 

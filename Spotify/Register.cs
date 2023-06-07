@@ -12,6 +12,8 @@ using System.ComponentModel.DataAnnotations;
 using MySql.Data.MySqlClient;
 using System.Text.RegularExpressions;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
+using System.Net.Mail;
+using System.Net;
 
 namespace Spotify
 {
@@ -100,387 +102,134 @@ namespace Spotify
             guna2TextBox4.PlaceholderForeColor = deafault_c;
             guna2TextBox1.PlaceholderText = "Username";
             guna2TextBox2.PlaceholderText = "Email";
-            guna2TextBox3.PlaceholderText = "Password";
-            guna2TextBox4.PlaceholderText = "Password again";
+            guna2TextBox3.PlaceholderText = "Use at least 8 characters";
+            guna2TextBox4.PlaceholderText = "Use at least 8 characters";
             guna2TextBox1.HoverState.BorderColor = deafault_c;
             guna2TextBox2.HoverState.BorderColor = deafault_c;
             guna2TextBox3.HoverState.BorderColor = deafault_c;
             guna2TextBox4.HoverState.BorderColor = deafault_c;
 
+            string i_username = guna2TextBox1.Text;
+            string i_email = guna2TextBox2.Text;
+            string password1 = guna2TextBox3.Text;
+            string password2 = guna2TextBox4.Text;
+            int pass1lenght = password1.Length;
+            string i_password = password1;
+            string u_pattern = @"^[a-zA-Z0-9_]+$";
+            string e_pattern1 = @"^[a-zA-Z0-9]+.[a-zA-Z0-9]+@[a-zA-Z0-9]+.[a-zA-Z]{2,}$";
+            string e_pattern2 = @"^[a-zA-Z0-9]+@[a-zA-Z0-9]+.[a-zA-Z]{2,}$";
+
 
             try
             {
-                if (guna2TextBox1.Text == "")
+                if (conn.State == ConnectionState.Closed)
+                {
+                    conn.Open();
+
+                }
+                string username_query = "SELECT u_username FROM spotify.personal_info WHERE u_username = '" + i_username + "'";
+                MySqlCommand cmd = new MySqlCommand(username_query, conn);
+                MySqlDataReader sdr = cmd.ExecuteReader();
+                if (sdr.HasRows)
+                {
+                    guna2TextBox1.BorderColor = wrong_c;
+                    guna2TextBox1.HoverState.BorderColor = wrong_c;
+                    guna2TextBox1.PlaceholderForeColor = wrong_c;
+                    guna2TextBox1.PlaceholderText = "Username already exist!";
+                    guna2TextBox1.Text = string.Empty;
+                }else if(i_username == "")
                 {
                     guna2TextBox1.BorderColor = wrong_c;
                     guna2TextBox1.HoverState.BorderColor = wrong_c;
                     guna2TextBox1.PlaceholderForeColor = wrong_c;
                     guna2TextBox1.PlaceholderText = "Enter your username!";
-                    if (guna2TextBox2.Text == "")
-                    {
-                        guna2TextBox2.BorderColor = wrong_c;
-                        guna2TextBox2.HoverState.BorderColor = wrong_c;
-                        guna2TextBox2.PlaceholderForeColor = wrong_c;
-                        guna2TextBox2.PlaceholderText = "Enter your email!";
+                }else if (!(Regex.IsMatch(i_username, u_pattern)))
+                {
+                    guna2TextBox1.BorderColor = wrong_c;
+                    guna2TextBox1.HoverState.BorderColor = wrong_c;
+                    guna2TextBox1.PlaceholderForeColor = wrong_c;
+                    guna2TextBox1.PlaceholderText = "Use letters or numbers!";
+                    guna2TextBox1.Text = string.Empty;
 
-                    }
-                    if (guna2TextBox3.Text == "")
-                    {
-                        guna2TextBox3.BorderColor = wrong_c;
-                        guna2TextBox3.HoverState.BorderColor = wrong_c;
-                        guna2TextBox3.PlaceholderForeColor = wrong_c;
-                        guna2TextBox3.PlaceholderText = "Enter your password!";
+                }
+                sdr.Close();
+                string email_query = "SELECT u_email FROM spotify.personal_info WHERE u_email = '" + i_email + "'";
+                MySqlCommand cmad = new MySqlCommand(email_query, conn);
+                MySqlDataReader sdrr = cmad.ExecuteReader();
+                if (sdrr.HasRows)
+                {
+                    guna2TextBox2.BorderColor = wrong_c;
+                    guna2TextBox2.HoverState.BorderColor = wrong_c;
+                    guna2TextBox2.PlaceholderForeColor = wrong_c;
+                    guna2TextBox2.PlaceholderText = "Email already exist!";
+                    guna2TextBox2.Text = string.Empty;
+                }else if(i_email == "")
+                {
+                    guna2TextBox2.BorderColor = wrong_c;
+                    guna2TextBox2.HoverState.BorderColor = wrong_c;
+                    guna2TextBox2.PlaceholderForeColor = wrong_c;
+                    guna2TextBox2.PlaceholderText = "Enter your email!";
+                }else if (!((Regex.IsMatch(i_email, e_pattern1)) || (Regex.IsMatch(i_email, e_pattern2))))
+                {
+                    guna2TextBox2.BorderColor = wrong_c;
+                    guna2TextBox2.HoverState.BorderColor = wrong_c;
+                    guna2TextBox2.PlaceholderForeColor = wrong_c;
+                    guna2TextBox2.PlaceholderText = "Invalid email!";
+                    guna2TextBox2.Text = string.Empty;
+                }
 
-                    }
-                    if (guna2TextBox4.Text == "")
-                    {
-                        guna2TextBox4.BorderColor = wrong_c;
-                        guna2TextBox4.HoverState.BorderColor = wrong_c;
-                        guna2TextBox4.PlaceholderForeColor = wrong_c;
-                        guna2TextBox4.PlaceholderText = "Enter your password!";
 
-                    }
-                    string password1 = guna2TextBox3.Text;
-                    string password2 = guna2TextBox4.Text;
-                    int pass1lenght = password1.Length;
-
-                    if (pass1lenght > 8)
+                if (pass1lenght > 7)
+                {
+                    if (password1 == password2)
                     {
-                        if (password1 == password2)
+                        sdrr.Close();
+                        string i_query = "INSERT INTO spotify.personal_info(u_username,u_email,u_password) VALUES('" + i_username + "', '" + i_email + "', '" + i_password + "');";
+                        MySqlCommand i_cmd = new MySqlCommand(i_query, conn);
+                        MySqlDataReader i_sdr = i_cmd.ExecuteReader();
+                        MailMessage mail = new MailMessage("spotify.real100@gmail.com", guna2TextBox2.Text, "Registracia na 100% real spotify", "Registroval si sa ty blazon");
+                        using (SmtpClient smtp = new SmtpClient("smtp.gmail.com", 587))
                         {
+                            smtp.UseDefaultCredentials = false;
+                            smtp.Credentials = new NetworkCredential("spotify.real100@gmail.com", "bmwnxnfpamymessw");
+                            smtp.EnableSsl = true;
+                            smtp.Send(mail);
+                        }
+                        this.Hide();
+                        var Loginform = new Login();
+                        Loginform.Closed += (s, args) => this.Close();
+                        Loginform.Show();
 
-                        }
-                        else
-                        {
-                            guna2TextBox4.BorderColor = wrong_c;
-                            guna2TextBox4.HoverState.BorderColor = wrong_c;
-                            guna2TextBox4.PlaceholderForeColor = wrong_c;
-                            guna2TextBox4.PlaceholderText = "Passwords don´t match";
-                            guna2TextBox4.Text = string.Empty;
-                        }
                     }
                     else
                     {
-                        guna2TextBox3.BorderColor = wrong_c;
-                        guna2TextBox3.HoverState.BorderColor = wrong_c;
-                        guna2TextBox3.PlaceholderForeColor = wrong_c;
-                        guna2TextBox3.PlaceholderText = "Password is too short";
-                        guna2TextBox3.Text = string.Empty;
+                        guna2TextBox4.BorderColor = wrong_c;
+                        guna2TextBox4.PlaceholderForeColor = wrong_c;
+                        guna2TextBox4.PlaceholderText = "Passwords don´t match";
+                        guna2TextBox4.Text = string.Empty;
                     }
-                    
                 }
                 else
                 {
-                    if (conn.State == ConnectionState.Closed)
-                    {
-                        conn.Open();
-
-                    }
-                    string username_query = "SELECT u_username FROM spotify.personal_info WHERE u_username = '" + guna2TextBox1.Text + "'";
-                    MySqlCommand cmd = new MySqlCommand(username_query, conn);
-                    MySqlDataReader sdr = cmd.ExecuteReader();
-                    if (sdr.HasRows)
-                    {
-                        guna2TextBox1.BorderColor = wrong_c;
-                        guna2TextBox1.HoverState.BorderColor = wrong_c;
-                        guna2TextBox1.PlaceholderForeColor = wrong_c;
-                        guna2TextBox1.PlaceholderText = "Username already exist!";
-                        guna2TextBox1.Text = string.Empty;
-
-                        sdr.Close();
-                        string email_query = "SELECT u_email FROM spotify.personal_info WHERE u_email = '" + guna2TextBox2.Text + "'";
-                        MySqlCommand cmad = new MySqlCommand(email_query, conn);
-                        MySqlDataReader sdrr = cmad.ExecuteReader();
-                        if (sdrr.HasRows)
-                        {
-                            guna2TextBox2.BorderColor = wrong_c;
-                            guna2TextBox2.HoverState.BorderColor = wrong_c;
-                            guna2TextBox2.PlaceholderForeColor = wrong_c;
-                            guna2TextBox2.PlaceholderText = "Email already exist!";
-                            guna2TextBox2.Text = string.Empty;
-
-                        }
-                        if (guna2TextBox2.Text == "")
-                        {
-                            guna2TextBox2.BorderColor = wrong_c;
-                            guna2TextBox2.HoverState.BorderColor = wrong_c;
-                            guna2TextBox2.PlaceholderForeColor = wrong_c;
-                            guna2TextBox2.PlaceholderText = "Enter your email!";
-                        }
-                        string password1 = guna2TextBox3.Text;
-                        string password2 = guna2TextBox4.Text;
-                        int pass1lenght = password1.Length;
-                        if (password1 == "" || password2 == "")
-                        {
-                            if (password1 == "")
-                            {
-                                guna2TextBox3.BorderColor = wrong_c;
-                                guna2TextBox3.HoverState.BorderColor = wrong_c;
-                                guna2TextBox3.PlaceholderForeColor = wrong_c;
-                                guna2TextBox3.PlaceholderText = "Enter your password!";
-                            }
-                            if (password2 == "")
-                            {
-                                guna2TextBox4.BorderColor = wrong_c;
-                                guna2TextBox4.HoverState.BorderColor = wrong_c;
-                                guna2TextBox4.PlaceholderForeColor = wrong_c;
-                                guna2TextBox4.PlaceholderText = "Enter your password!";
-                            }
-                        }
-                        else
-                        {
-                            if (pass1lenght > 8)
-                            {
-                                if (password1 == password2)
-                                {
-
-                                }
-                                else
-                                {
-                                    guna2TextBox4.BorderColor = wrong_c;
-                                    guna2TextBox4.PlaceholderForeColor = wrong_c;
-                                    guna2TextBox4.PlaceholderText = "Passwords don´t match";
-                                    guna2TextBox4.Text = string.Empty;
-                                }
-                            }
-                            else
-                            {
-                                guna2TextBox3.BorderColor = wrong_c;
-                                guna2TextBox3.HoverState.BorderColor = wrong_c;
-                                guna2TextBox3.PlaceholderForeColor = wrong_c;
-                                guna2TextBox3.PlaceholderText = "Enter your password!";
-                                guna2TextBox4.BorderColor = wrong_c;
-                                guna2TextBox4.HoverState.BorderColor = wrong_c;
-                                guna2TextBox4.PlaceholderForeColor = wrong_c;
-                                guna2TextBox4.PlaceholderText = "Enter your password!";
-                            }
-                        }
-
-                    }
-                    else
-                    {
-                        if (guna2TextBox2.Text == "")
-                        {
-                            guna2TextBox2.BorderColor = wrong_c;
-                            guna2TextBox2.HoverState.BorderColor = wrong_c;
-                            guna2TextBox2.PlaceholderForeColor = wrong_c;
-                            guna2TextBox2.PlaceholderText = "Enter your email!";
-                            if (guna2TextBox3.Text == "")
-                            {
-                                guna2TextBox3.BorderColor = wrong_c;
-                                guna2TextBox3.HoverState.BorderColor = wrong_c;
-                                guna2TextBox3.PlaceholderForeColor = wrong_c;
-                                guna2TextBox3.PlaceholderText = "Enter your password!";
-
-                            }
-                            if (guna2TextBox4.Text == "")
-                            {
-                                guna2TextBox4.BorderColor = wrong_c;
-                                guna2TextBox4.HoverState.BorderColor = wrong_c;
-                                guna2TextBox4.PlaceholderForeColor = wrong_c;
-                                guna2TextBox4.PlaceholderText = "Enter your password!";
-
-                            }
-                            string password1 = guna2TextBox3.Text;
-                            string password2 = guna2TextBox4.Text;
-                            int pass1lenght = password1.Length;
-                            if (password1 == "" || password2 == "")
-                            {
-                                if (password1 == "")
-                                {
-                                    guna2TextBox3.BorderColor = wrong_c;
-                                    guna2TextBox3.HoverState.BorderColor = wrong_c;
-                                    guna2TextBox3.PlaceholderForeColor = wrong_c;
-                                    guna2TextBox3.PlaceholderText = "Enter your password!";
-                                }
-                                if (password2 == "")
-                                {
-                                    guna2TextBox4.BorderColor = wrong_c;
-                                    guna2TextBox4.HoverState.BorderColor = wrong_c;
-                                    guna2TextBox4.PlaceholderForeColor = wrong_c;
-                                    guna2TextBox4.PlaceholderText = "Enter your password!";
-                                }
-                            }
-                            else
-                            {
-                                if (pass1lenght > 8)
-                                {
-                                    if (password1 == password2)
-                                    {
-
-                                    }
-                                    else
-                                    {
-                                        guna2TextBox4.BorderColor = wrong_c;
-                                        guna2TextBox4.HoverState.BorderColor = wrong_c;
-                                        guna2TextBox4.PlaceholderForeColor = wrong_c;
-                                        guna2TextBox4.PlaceholderText = "Passwords don´t match";
-                                        guna2TextBox4.Text = string.Empty;
-                                    }
-                                }
-                                else
-                                {
-                                    guna2TextBox3.BorderColor = wrong_c;
-                                    guna2TextBox3.HoverState.BorderColor = wrong_c;
-                                    guna2TextBox3.PlaceholderForeColor = wrong_c;
-                                    guna2TextBox3.PlaceholderText = "Password is too short";
-                                    guna2TextBox3.Text = string.Empty;
-                                }
-                            }
-                        }
-                        else
-                        {
-                            sdr.Close();
-                            string email_query = "SELECT u_email FROM spotify.personal_info WHERE u_email = '" + guna2TextBox2.Text + "'";
-                            MySqlCommand cmad = new MySqlCommand(email_query, conn);
-                            MySqlDataReader sdrr = cmad.ExecuteReader();
-                            if (sdrr.HasRows)
-                            {
-                                guna2TextBox2.BorderColor = wrong_c;
-                                guna2TextBox2.HoverState.BorderColor = wrong_c;
-                                guna2TextBox2.PlaceholderForeColor = wrong_c;
-                                guna2TextBox2.PlaceholderText = "Email already exist!";
-                                guna2TextBox2.Text = string.Empty;
-                                string password1 = guna2TextBox3.Text;
-                                string password2 = guna2TextBox4.Text;
-                                int pass1lenght = password1.Length;
-                                if (password1 == "" || password2 == "")
-                                {
-                                    if (password1 == "")
-                                    {
-                                        guna2TextBox3.BorderColor = wrong_c;
-                                        guna2TextBox3.HoverState.BorderColor = wrong_c;
-                                        guna2TextBox3.PlaceholderForeColor = wrong_c;
-                                        guna2TextBox3.PlaceholderText = "Enter your password!";
-                                    }
-                                    if (password2 == "")
-                                    {
-                                        guna2TextBox4.BorderColor = wrong_c;
-                                        guna2TextBox4.HoverState.BorderColor = wrong_c;
-                                        guna2TextBox4.PlaceholderForeColor = wrong_c;
-                                        guna2TextBox4.PlaceholderText = "Enter your password!";
-                                    }
-                                }
-                                else
-                                {
-                                    if (pass1lenght > 8)
-                                    {
-                                        if (password1 == password2)
-                                        {
-
-                                        }
-                                        else
-                                        {
-                                            guna2TextBox4.BorderColor = wrong_c;
-                                            guna2TextBox4.HoverState.BorderColor = wrong_c;
-                                            guna2TextBox4.PlaceholderForeColor = wrong_c;
-                                            guna2TextBox4.PlaceholderText = "Passwords don´t match";
-                                        }
-                                    }
-                                    else
-                                    {
-                                        guna2TextBox3.BorderColor = wrong_c;
-                                        guna2TextBox3.HoverState.BorderColor = wrong_c;
-                                        guna2TextBox3.PlaceholderForeColor = wrong_c;
-                                        guna2TextBox3.PlaceholderText = "Enter your password!";
-                                        guna2TextBox4.BorderColor = wrong_c;
-                                        guna2TextBox4.HoverState.BorderColor = wrong_c;
-                                        guna2TextBox4.PlaceholderForeColor = wrong_c;
-                                        guna2TextBox4.PlaceholderText = "Enter your password!";
-                                    }
-                                }
-                            }
-                            else
-                            {
-
-
-                                string password1 = guna2TextBox3.Text;
-                                string password2 = guna2TextBox4.Text;
-                                int pass1lenght = password1.Length;
-                                if (password1 == "" || password2 == "")
-                                {
-                                    if (password1 == "")
-                                    {
-                                        guna2TextBox3.BorderColor = wrong_c;
-                                        guna2TextBox3.HoverState.BorderColor = wrong_c;
-                                        guna2TextBox3.PlaceholderForeColor = wrong_c;
-                                        guna2TextBox3.PlaceholderText = "Enter your password!";
-                                        if (password2 == "")
-                                        {
-                                            guna2TextBox4.BorderColor = wrong_c;
-                                            guna2TextBox4.HoverState.BorderColor = wrong_c;
-                                            guna2TextBox4.PlaceholderForeColor = wrong_c;
-                                            guna2TextBox4.PlaceholderText = "Enter your password!";
-                                        }
-                                    }
-                                    if (password2 == "")
-                                    {
-                                        guna2TextBox4.BorderColor = wrong_c;
-                                        guna2TextBox4.HoverState.BorderColor = wrong_c;
-                                        guna2TextBox4.PlaceholderForeColor = wrong_c;
-                                        guna2TextBox4.PlaceholderText = "Enter your password!";
-                                    }
-                                }
-                                else
-                                {
-                                    if (pass1lenght > 8)
-                                    {
-                                        if (password1 == password2)
-                                        {
-                                            string i_username = guna2TextBox1.Text;
-                                            string i_email = guna2TextBox2.Text;
-                                            string i_password = guna2TextBox3.Text;
-                                            string u_pattern = @"^[a-zA-Z0-9_]+$";
-                                            string e_pattern1 = @"^[a-zA-Z0-9]+.[a-zA-Z0-9]+@[a-zA-Z0-9]+.[a-zA-Z]{2,}$";
-                                            string e_pattern2 = @"^[a-zA-Z0-9]+@[a-zA-Z0-9]+.[a-zA-Z]{2,}$";
-                                            if (Regex.IsMatch(i_username, u_pattern))
-                                            {
-                                                if((Regex.IsMatch(i_email, e_pattern1)) || (Regex.IsMatch(i_email, e_pattern2)))
-                                                {
-                                                    
-                                                    sdrr.Close();
-                                                    string i_query = "INSERT INTO spotify.personal_info(u_username,u_email,u_password) VALUES('"+ i_username + "', '"+ i_email + "', '"+ i_password + "');";
-                                                    MySqlCommand i_cmd = new MySqlCommand(i_query, conn);
-                                                    MySqlDataReader i_sdr = i_cmd.ExecuteReader();
-                                                    MessageBox.Show("uspech ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                                                }
-                                                else
-                                                {
-                                                    MessageBox.Show("zly email", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                                                }
-                                            }
-                                            else
-                                            {
-                                                MessageBox.Show("zle meno", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                                            }
-                                        }
-                                        else
-                                        {
-                                            guna2TextBox4.BorderColor = wrong_c;
-                                            guna2TextBox4.HoverState.BorderColor = wrong_c;
-                                            guna2TextBox4.PlaceholderForeColor = wrong_c;
-                                            guna2TextBox4.PlaceholderText = "Passwords don´t match";
-                                            guna2TextBox4.Text = string.Empty;
-                                        }
-                                    }
-                                    else
-                                    {
-                                        guna2TextBox3.BorderColor = wrong_c;
-                                        guna2TextBox3.HoverState.BorderColor = wrong_c;
-                                        guna2TextBox3.PlaceholderForeColor = wrong_c;
-                                        guna2TextBox3.PlaceholderText = "Password is too short";
-                                        guna2TextBox3.Text = string.Empty;
-
-                                    }
-                                }
-                            }
-                        }
-                    }
-                    conn.Close();
+                    guna2TextBox3.BorderColor = wrong_c;
+                    guna2TextBox3.HoverState.BorderColor = wrong_c;
+                    guna2TextBox3.PlaceholderForeColor = wrong_c;
+                    guna2TextBox3.PlaceholderText = "Password is too short!";
+                    guna2TextBox3.Text = string.Empty;
+                    guna2TextBox4.BorderColor = wrong_c;
+                    guna2TextBox4.HoverState.BorderColor = wrong_c;
+                    guna2TextBox4.PlaceholderForeColor = wrong_c;
+                    guna2TextBox4.PlaceholderText = "Password is too short!";
+                    guna2TextBox4.Text = string.Empty;
 
                 }
+                conn.Close();
+
                 
-            }
+                    
+
+            
+            }         
             catch (Exception ex)
             {
 
@@ -527,6 +276,7 @@ namespace Spotify
         }
 
         Rectangle TopRight { get { return new Rectangle(this.ClientSize.Width - _, 0, _, _); } }
+
         Rectangle BottomLeft { get { return new Rectangle(0, this.ClientSize.Height - _, _, _); } }
         Rectangle BottomRight { get { return new Rectangle(this.ClientSize.Width - _, this.ClientSize.Height - _, _, _); } }
 

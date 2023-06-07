@@ -238,6 +238,8 @@ namespace Spotify
             guna2TextBox2.PlaceholderText = "Password";
             guna2TextBox1.HoverState.BorderColor = deafault_c;
             guna2TextBox2.HoverState.BorderColor = deafault_c;
+            guna2TextBox1.HoverState.ForeColor = deafault_c;
+            guna2TextBox2.HoverState.ForeColor = deafault_c;
 
             try
             {
@@ -251,6 +253,8 @@ namespace Spotify
                     guna2TextBox2.PlaceholderText = "Enter your password!";
                     guna2TextBox1.HoverState.BorderColor = wrong_c;
                     guna2TextBox2.HoverState.BorderColor = wrong_c;
+                    guna2TextBox1.HoverState.PlaceholderForeColor = wrong_c;
+                    guna2TextBox2.HoverState.PlaceholderForeColor = wrong_c;
                 }
                 else { 
                     if (con.State == ConnectionState.Closed){
@@ -274,6 +278,7 @@ namespace Spotify
                             guna2TextBox2.PlaceholderForeColor = wrong_c;
                             guna2TextBox2.PlaceholderText = "Incorrect password";
                             guna2TextBox2.HoverState.BorderColor = wrong_c;
+                            guna2TextBox2.HoverState.PlaceholderForeColor = wrong_c;
                         }
                     }
                     else{
@@ -282,12 +287,14 @@ namespace Spotify
                         guna2TextBox1.PlaceholderText = "Incorrect username!";
                         guna2TextBox1.HoverState.BorderColor = wrong_c;
                         guna2TextBox1.Text = string.Empty;
+                        guna2TextBox1.HoverState.PlaceholderForeColor = wrong_c;
                         if (guna2TextBox2.Text == "")
                         {                           
                             guna2TextBox2.BorderColor = wrong_c;                           
                             guna2TextBox2.PlaceholderForeColor = wrong_c;                           
                             guna2TextBox2.PlaceholderText = "Enter your password!";
                             guna2TextBox2.HoverState.BorderColor = wrong_c;
+                            guna2TextBox2.HoverState.PlaceholderForeColor = wrong_c;
                         }
                     }
 
