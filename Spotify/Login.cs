@@ -271,7 +271,10 @@ namespace Spotify
 
                         if (sdr["u_password"].Equals(guna2TextBox2.Text))
                         {
-                            MessageBox.Show("Si registrovany", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            this.Hide();
+                            var dashboard = new Dashboard();
+                            dashboard.Closed += (s, args) => this.Close();
+                            dashboard.Show();
                         }
                         else{
                             guna2TextBox2.BorderColor = wrong_c;
@@ -310,6 +313,8 @@ namespace Spotify
                 label6.Visible = true;
             }
         }
+
+       
 
 
         private void Login_Load(object sender, EventArgs e)
