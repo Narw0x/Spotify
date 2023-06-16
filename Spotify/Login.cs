@@ -223,7 +223,7 @@ namespace Spotify
         }
         static string constr = ("Data Source=localhost;port=3306;username=root;password=");
         static MySqlConnection con = new MySqlConnection(constr);
-
+        public static string name = "";
         private void guna2Button1_Click(object sender, EventArgs e)
         {
             Color deafault_c = Color.FromArgb(64, 64, 64);
@@ -271,6 +271,7 @@ namespace Spotify
 
                         if (sdr["u_password"].Equals(guna2TextBox2.Text))
                         {
+                            name = guna2TextBox1.Text;
                             this.Hide();
                             var dashboard = new Dashboard();
                             dashboard.Closed += (s, args) => this.Close();

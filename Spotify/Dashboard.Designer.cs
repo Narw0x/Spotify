@@ -34,56 +34,56 @@
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel6 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Panel7 = new Guna.UI2.WinForms.Guna2Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Panel5 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.panelchildform = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
-            this.guna2Panel8 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Panel9 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Panel10 = new Guna.UI2.WinForms.Guna2Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.guna2Panel11 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Panel12 = new Guna.UI2.WinForms.Guna2Panel();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.guna2Panel13 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel14 = new Guna.UI2.WinForms.Guna2Panel();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.guna2PictureBox7 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2Panel11 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2Panel12 = new Guna.UI2.WinForms.Guna2Panel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.guna2PictureBox6 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2Panel9 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2Panel10 = new Guna.UI2.WinForms.Guna2Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.guna2PictureBox5 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2Panel8 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2Panel7 = new Guna.UI2.WinForms.Guna2Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Panel5 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2PictureBox4 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.panelchildform = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.guna2Panel1.SuspendLayout();
             this.guna2Panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
             this.guna2Panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             this.guna2Panel2.SuspendLayout();
             this.guna2Panel6.SuspendLayout();
-            this.guna2Panel7.SuspendLayout();
-            this.guna2Panel5.SuspendLayout();
-            this.guna2Panel10.SuspendLayout();
-            this.guna2Panel12.SuspendLayout();
             this.guna2Panel14.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox7)).BeginInit();
+            this.guna2Panel12.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox6)).BeginInit();
+            this.guna2Panel10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox5)).BeginInit();
+            this.guna2Panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
+            this.guna2Panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2ControlBox3
@@ -140,6 +140,7 @@
             // 
             this.guna2Panel4.Controls.Add(this.guna2HtmlLabel2);
             this.guna2Panel4.Controls.Add(this.guna2PictureBox3);
+            this.guna2Panel4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.guna2Panel4.Location = new System.Drawing.Point(15, 53);
             this.guna2Panel4.Name = "guna2Panel4";
             this.guna2Panel4.Size = new System.Drawing.Size(286, 35);
@@ -150,34 +151,59 @@
             this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel2.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel2.ForeColor = System.Drawing.Color.White;
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(39, 5);
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(39, 8);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
             this.guna2HtmlLabel2.Padding = new System.Windows.Forms.Padding(0, 0, 0, 5);
             this.guna2HtmlLabel2.Size = new System.Drawing.Size(49, 27);
             this.guna2HtmlLabel2.TabIndex = 2;
             this.guna2HtmlLabel2.Text = "Search";
             // 
+            // guna2PictureBox3
+            // 
+            this.guna2PictureBox3.Image = global::Spotify.Properties.Resources.icons8_search_30;
+            this.guna2PictureBox3.ImageRotate = 0F;
+            this.guna2PictureBox3.Location = new System.Drawing.Point(3, 3);
+            this.guna2PictureBox3.Name = "guna2PictureBox3";
+            this.guna2PictureBox3.Size = new System.Drawing.Size(30, 30);
+            this.guna2PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2PictureBox3.TabIndex = 0;
+            this.guna2PictureBox3.TabStop = false;
+            // 
             // guna2Panel3
             // 
             this.guna2Panel3.Controls.Add(this.guna2HtmlLabel1);
             this.guna2Panel3.Controls.Add(this.guna2PictureBox2);
+            this.guna2Panel3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.guna2Panel3.Location = new System.Drawing.Point(15, 12);
             this.guna2Panel3.Name = "guna2Panel3";
             this.guna2Panel3.Size = new System.Drawing.Size(286, 35);
             this.guna2Panel3.TabIndex = 0;
+            this.guna2Panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel3_Paint);
             // 
             // guna2HtmlLabel1
             // 
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.White;
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(39, 5);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(39, 8);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
             this.guna2HtmlLabel1.Padding = new System.Windows.Forms.Padding(0, 0, 0, 5);
             this.guna2HtmlLabel1.Size = new System.Drawing.Size(45, 27);
             this.guna2HtmlLabel1.TabIndex = 1;
             this.guna2HtmlLabel1.Text = "Home";
             this.guna2HtmlLabel1.Click += new System.EventHandler(this.guna2HtmlLabel1_Click);
+            // 
+            // guna2PictureBox2
+            // 
+            this.guna2PictureBox2.Image = global::Spotify.Properties.Resources.icons8_house_48;
+            this.guna2PictureBox2.ImageRotate = 0F;
+            this.guna2PictureBox2.Location = new System.Drawing.Point(3, 3);
+            this.guna2PictureBox2.Name = "guna2PictureBox2";
+            this.guna2PictureBox2.Size = new System.Drawing.Size(30, 30);
+            this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2PictureBox2.TabIndex = 0;
+            this.guna2PictureBox2.TabStop = false;
+            this.guna2PictureBox2.Click += new System.EventHandler(this.guna2PictureBox2_Click);
             // 
             // guna2Panel2
             // 
@@ -216,6 +242,193 @@
             this.guna2Panel6.Name = "guna2Panel6";
             this.guna2Panel6.Size = new System.Drawing.Size(286, 424);
             this.guna2Panel6.TabIndex = 5;
+            // 
+            // guna2Panel13
+            // 
+            this.guna2Panel13.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2Panel13.Location = new System.Drawing.Point(0, 354);
+            this.guna2Panel13.Name = "guna2Panel13";
+            this.guna2Panel13.Size = new System.Drawing.Size(286, 10);
+            this.guna2Panel13.TabIndex = 7;
+            // 
+            // guna2Panel14
+            // 
+            this.guna2Panel14.BorderRadius = 10;
+            this.guna2Panel14.Controls.Add(this.label7);
+            this.guna2Panel14.Controls.Add(this.label8);
+            this.guna2Panel14.Controls.Add(this.guna2PictureBox7);
+            this.guna2Panel14.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2Panel14.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2Panel14.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
+            this.guna2Panel14.Location = new System.Drawing.Point(0, 273);
+            this.guna2Panel14.Name = "guna2Panel14";
+            this.guna2Panel14.Size = new System.Drawing.Size(286, 81);
+            this.guna2Panel14.TabIndex = 6;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.DarkGray;
+            this.label7.Location = new System.Drawing.Point(86, 51);
+            this.label7.Margin = new System.Windows.Forms.Padding(3, 5, 3, 15);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(45, 15);
+            this.label7.TabIndex = 2;
+            this.label7.Text = "Playlist";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.White;
+            this.label8.Location = new System.Drawing.Point(85, 20);
+            this.label8.Margin = new System.Windows.Forms.Padding(3, 20, 3, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(95, 20);
+            this.label8.TabIndex = 1;
+            this.label8.Text = "Your playlist";
+            // 
+            // guna2PictureBox7
+            // 
+            this.guna2PictureBox7.BorderRadius = 10;
+            this.guna2PictureBox7.Image = global::Spotify.Properties.Resources.lsdycham;
+            this.guna2PictureBox7.ImageRotate = 0F;
+            this.guna2PictureBox7.Location = new System.Drawing.Point(12, 12);
+            this.guna2PictureBox7.Margin = new System.Windows.Forms.Padding(12);
+            this.guna2PictureBox7.Name = "guna2PictureBox7";
+            this.guna2PictureBox7.Size = new System.Drawing.Size(59, 58);
+            this.guna2PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2PictureBox7.TabIndex = 0;
+            this.guna2PictureBox7.TabStop = false;
+            // 
+            // guna2Panel11
+            // 
+            this.guna2Panel11.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2Panel11.Location = new System.Drawing.Point(0, 263);
+            this.guna2Panel11.Name = "guna2Panel11";
+            this.guna2Panel11.Size = new System.Drawing.Size(286, 10);
+            this.guna2Panel11.TabIndex = 5;
+            // 
+            // guna2Panel12
+            // 
+            this.guna2Panel12.BorderRadius = 10;
+            this.guna2Panel12.Controls.Add(this.label5);
+            this.guna2Panel12.Controls.Add(this.label6);
+            this.guna2Panel12.Controls.Add(this.guna2PictureBox6);
+            this.guna2Panel12.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2Panel12.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2Panel12.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
+            this.guna2Panel12.Location = new System.Drawing.Point(0, 182);
+            this.guna2Panel12.Name = "guna2Panel12";
+            this.guna2Panel12.Size = new System.Drawing.Size(286, 81);
+            this.guna2Panel12.TabIndex = 4;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.DarkGray;
+            this.label5.Location = new System.Drawing.Point(86, 51);
+            this.label5.Margin = new System.Windows.Forms.Padding(3, 5, 3, 15);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(82, 15);
+            this.label5.TabIndex = 2;
+            this.label5.Text = "Album · Jurco";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(85, 20);
+            this.label6.Margin = new System.Windows.Forms.Padding(3, 20, 3, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(104, 20);
+            this.label6.TabIndex = 1;
+            this.label6.Text = "Flow Odyssey";
+            // 
+            // guna2PictureBox6
+            // 
+            this.guna2PictureBox6.BorderRadius = 10;
+            this.guna2PictureBox6.Image = global::Spotify.Properties.Resources.flowodyssey;
+            this.guna2PictureBox6.ImageRotate = 0F;
+            this.guna2PictureBox6.Location = new System.Drawing.Point(12, 12);
+            this.guna2PictureBox6.Margin = new System.Windows.Forms.Padding(12);
+            this.guna2PictureBox6.Name = "guna2PictureBox6";
+            this.guna2PictureBox6.Size = new System.Drawing.Size(59, 58);
+            this.guna2PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2PictureBox6.TabIndex = 0;
+            this.guna2PictureBox6.TabStop = false;
+            // 
+            // guna2Panel9
+            // 
+            this.guna2Panel9.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2Panel9.Location = new System.Drawing.Point(0, 172);
+            this.guna2Panel9.Name = "guna2Panel9";
+            this.guna2Panel9.Size = new System.Drawing.Size(286, 10);
+            this.guna2Panel9.TabIndex = 3;
+            // 
+            // guna2Panel10
+            // 
+            this.guna2Panel10.BorderRadius = 10;
+            this.guna2Panel10.Controls.Add(this.label3);
+            this.guna2Panel10.Controls.Add(this.label4);
+            this.guna2Panel10.Controls.Add(this.guna2PictureBox5);
+            this.guna2Panel10.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2Panel10.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2Panel10.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
+            this.guna2Panel10.Location = new System.Drawing.Point(0, 91);
+            this.guna2Panel10.Name = "guna2Panel10";
+            this.guna2Panel10.Size = new System.Drawing.Size(286, 81);
+            this.guna2Panel10.TabIndex = 2;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.DarkGray;
+            this.label3.Location = new System.Drawing.Point(86, 51);
+            this.label3.Margin = new System.Windows.Forms.Padding(3, 5, 3, 15);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(38, 15);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Artist";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(85, 20);
+            this.label4.Margin = new System.Windows.Forms.Padding(3, 20, 3, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(41, 20);
+            this.label4.TabIndex = 1;
+            this.label4.Text = "Gleb";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
+            // 
+            // guna2PictureBox5
+            // 
+            this.guna2PictureBox5.BorderRadius = 30;
+            this.guna2PictureBox5.Image = global::Spotify.Properties.Resources.gleb;
+            this.guna2PictureBox5.ImageRotate = 0F;
+            this.guna2PictureBox5.Location = new System.Drawing.Point(12, 12);
+            this.guna2PictureBox5.Margin = new System.Windows.Forms.Padding(12);
+            this.guna2PictureBox5.Name = "guna2PictureBox5";
+            this.guna2PictureBox5.Size = new System.Drawing.Size(59, 58);
+            this.guna2PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2PictureBox5.TabIndex = 0;
+            this.guna2PictureBox5.TabStop = false;
+            this.guna2PictureBox5.Click += new System.EventHandler(this.guna2PictureBox5_Click);
+            // 
+            // guna2Panel8
+            // 
+            this.guna2Panel8.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2Panel8.Location = new System.Drawing.Point(0, 81);
+            this.guna2Panel8.Name = "guna2Panel8";
+            this.guna2Panel8.Size = new System.Drawing.Size(286, 10);
+            this.guna2Panel8.TabIndex = 1;
             // 
             // guna2Panel7
             // 
@@ -256,6 +469,20 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Saul";
             this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // guna2PictureBox1
+            // 
+            this.guna2PictureBox1.BorderRadius = 30;
+            this.guna2PictureBox1.Image = global::Spotify.Properties.Resources.saul;
+            this.guna2PictureBox1.ImageRotate = 0F;
+            this.guna2PictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(12);
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.Size = new System.Drawing.Size(59, 58);
+            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2PictureBox1.TabIndex = 0;
+            this.guna2PictureBox1.TabStop = false;
+            this.guna2PictureBox1.Click += new System.EventHandler(this.guna2PictureBox1_Click);
             // 
             // guna2Button3
             // 
@@ -329,6 +556,17 @@
             this.guna2Panel5.Size = new System.Drawing.Size(286, 35);
             this.guna2Panel5.TabIndex = 1;
             // 
+            // guna2PictureBox4
+            // 
+            this.guna2PictureBox4.Image = global::Spotify.Properties.Resources.icons8_library_50;
+            this.guna2PictureBox4.ImageRotate = 0F;
+            this.guna2PictureBox4.Location = new System.Drawing.Point(3, 3);
+            this.guna2PictureBox4.Name = "guna2PictureBox4";
+            this.guna2PictureBox4.Size = new System.Drawing.Size(30, 30);
+            this.guna2PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2PictureBox4.TabIndex = 2;
+            this.guna2PictureBox4.TabStop = false;
+            // 
             // guna2HtmlLabel3
             // 
             this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
@@ -356,237 +594,6 @@
             this.panelchildform.Size = new System.Drawing.Size(763, 657);
             this.panelchildform.TabIndex = 0;
             // 
-            // guna2Panel8
-            // 
-            this.guna2Panel8.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Panel8.Location = new System.Drawing.Point(0, 81);
-            this.guna2Panel8.Name = "guna2Panel8";
-            this.guna2Panel8.Size = new System.Drawing.Size(286, 10);
-            this.guna2Panel8.TabIndex = 1;
-            // 
-            // guna2Panel9
-            // 
-            this.guna2Panel9.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Panel9.Location = new System.Drawing.Point(0, 172);
-            this.guna2Panel9.Name = "guna2Panel9";
-            this.guna2Panel9.Size = new System.Drawing.Size(286, 10);
-            this.guna2Panel9.TabIndex = 3;
-            // 
-            // guna2Panel10
-            // 
-            this.guna2Panel10.BorderRadius = 10;
-            this.guna2Panel10.Controls.Add(this.label3);
-            this.guna2Panel10.Controls.Add(this.label4);
-            this.guna2Panel10.Controls.Add(this.guna2PictureBox5);
-            this.guna2Panel10.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2Panel10.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Panel10.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
-            this.guna2Panel10.Location = new System.Drawing.Point(0, 91);
-            this.guna2Panel10.Name = "guna2Panel10";
-            this.guna2Panel10.Size = new System.Drawing.Size(286, 81);
-            this.guna2Panel10.TabIndex = 2;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.DarkGray;
-            this.label3.Location = new System.Drawing.Point(86, 51);
-            this.label3.Margin = new System.Windows.Forms.Padding(3, 5, 3, 15);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(38, 15);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Artist";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(85, 20);
-            this.label4.Margin = new System.Windows.Forms.Padding(3, 20, 3, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(41, 20);
-            this.label4.TabIndex = 1;
-            this.label4.Text = "Gleb";
-            // 
-            // guna2Panel11
-            // 
-            this.guna2Panel11.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Panel11.Location = new System.Drawing.Point(0, 263);
-            this.guna2Panel11.Name = "guna2Panel11";
-            this.guna2Panel11.Size = new System.Drawing.Size(286, 10);
-            this.guna2Panel11.TabIndex = 5;
-            // 
-            // guna2Panel12
-            // 
-            this.guna2Panel12.BorderRadius = 10;
-            this.guna2Panel12.Controls.Add(this.label5);
-            this.guna2Panel12.Controls.Add(this.label6);
-            this.guna2Panel12.Controls.Add(this.guna2PictureBox6);
-            this.guna2Panel12.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2Panel12.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Panel12.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
-            this.guna2Panel12.Location = new System.Drawing.Point(0, 182);
-            this.guna2Panel12.Name = "guna2Panel12";
-            this.guna2Panel12.Size = new System.Drawing.Size(286, 81);
-            this.guna2Panel12.TabIndex = 4;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.DarkGray;
-            this.label5.Location = new System.Drawing.Point(86, 51);
-            this.label5.Margin = new System.Windows.Forms.Padding(3, 5, 3, 15);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(82, 15);
-            this.label5.TabIndex = 2;
-            this.label5.Text = "Album · Jurco";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(85, 20);
-            this.label6.Margin = new System.Windows.Forms.Padding(3, 20, 3, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(104, 20);
-            this.label6.TabIndex = 1;
-            this.label6.Text = "Flow Odyssey";
-            // 
-            // guna2Panel13
-            // 
-            this.guna2Panel13.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Panel13.Location = new System.Drawing.Point(0, 354);
-            this.guna2Panel13.Name = "guna2Panel13";
-            this.guna2Panel13.Size = new System.Drawing.Size(286, 10);
-            this.guna2Panel13.TabIndex = 7;
-            // 
-            // guna2Panel14
-            // 
-            this.guna2Panel14.BorderRadius = 10;
-            this.guna2Panel14.Controls.Add(this.label7);
-            this.guna2Panel14.Controls.Add(this.label8);
-            this.guna2Panel14.Controls.Add(this.guna2PictureBox7);
-            this.guna2Panel14.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2Panel14.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Panel14.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
-            this.guna2Panel14.Location = new System.Drawing.Point(0, 273);
-            this.guna2Panel14.Name = "guna2Panel14";
-            this.guna2Panel14.Size = new System.Drawing.Size(286, 81);
-            this.guna2Panel14.TabIndex = 6;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.DarkGray;
-            this.label7.Location = new System.Drawing.Point(86, 51);
-            this.label7.Margin = new System.Windows.Forms.Padding(3, 5, 3, 15);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(45, 15);
-            this.label7.TabIndex = 2;
-            this.label7.Text = "Playlist";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(85, 20);
-            this.label8.Margin = new System.Windows.Forms.Padding(3, 20, 3, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(95, 20);
-            this.label8.TabIndex = 1;
-            this.label8.Text = "Your playlist";
-            // 
-            // guna2PictureBox7
-            // 
-            this.guna2PictureBox7.BorderRadius = 10;
-            this.guna2PictureBox7.Image = global::Spotify.Properties.Resources.lsdycham;
-            this.guna2PictureBox7.ImageRotate = 0F;
-            this.guna2PictureBox7.Location = new System.Drawing.Point(12, 12);
-            this.guna2PictureBox7.Margin = new System.Windows.Forms.Padding(12);
-            this.guna2PictureBox7.Name = "guna2PictureBox7";
-            this.guna2PictureBox7.Size = new System.Drawing.Size(59, 58);
-            this.guna2PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox7.TabIndex = 0;
-            this.guna2PictureBox7.TabStop = false;
-            // 
-            // guna2PictureBox6
-            // 
-            this.guna2PictureBox6.BorderRadius = 10;
-            this.guna2PictureBox6.Image = global::Spotify.Properties.Resources.flowodyssey;
-            this.guna2PictureBox6.ImageRotate = 0F;
-            this.guna2PictureBox6.Location = new System.Drawing.Point(12, 12);
-            this.guna2PictureBox6.Margin = new System.Windows.Forms.Padding(12);
-            this.guna2PictureBox6.Name = "guna2PictureBox6";
-            this.guna2PictureBox6.Size = new System.Drawing.Size(59, 58);
-            this.guna2PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox6.TabIndex = 0;
-            this.guna2PictureBox6.TabStop = false;
-            // 
-            // guna2PictureBox5
-            // 
-            this.guna2PictureBox5.BorderRadius = 30;
-            this.guna2PictureBox5.Image = global::Spotify.Properties.Resources.gleb;
-            this.guna2PictureBox5.ImageRotate = 0F;
-            this.guna2PictureBox5.Location = new System.Drawing.Point(12, 12);
-            this.guna2PictureBox5.Margin = new System.Windows.Forms.Padding(12);
-            this.guna2PictureBox5.Name = "guna2PictureBox5";
-            this.guna2PictureBox5.Size = new System.Drawing.Size(59, 58);
-            this.guna2PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox5.TabIndex = 0;
-            this.guna2PictureBox5.TabStop = false;
-            // 
-            // guna2PictureBox1
-            // 
-            this.guna2PictureBox1.BorderRadius = 30;
-            this.guna2PictureBox1.Image = global::Spotify.Properties.Resources.saul;
-            this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(12, 12);
-            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(12);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(59, 58);
-            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox1.TabIndex = 0;
-            this.guna2PictureBox1.TabStop = false;
-            // 
-            // guna2PictureBox4
-            // 
-            this.guna2PictureBox4.Image = global::Spotify.Properties.Resources.icons8_library_50;
-            this.guna2PictureBox4.ImageRotate = 0F;
-            this.guna2PictureBox4.Location = new System.Drawing.Point(3, 3);
-            this.guna2PictureBox4.Name = "guna2PictureBox4";
-            this.guna2PictureBox4.Size = new System.Drawing.Size(30, 30);
-            this.guna2PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox4.TabIndex = 2;
-            this.guna2PictureBox4.TabStop = false;
-            // 
-            // guna2PictureBox3
-            // 
-            this.guna2PictureBox3.Image = global::Spotify.Properties.Resources.icons8_search_30;
-            this.guna2PictureBox3.ImageRotate = 0F;
-            this.guna2PictureBox3.Location = new System.Drawing.Point(3, 3);
-            this.guna2PictureBox3.Name = "guna2PictureBox3";
-            this.guna2PictureBox3.Size = new System.Drawing.Size(30, 30);
-            this.guna2PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox3.TabIndex = 0;
-            this.guna2PictureBox3.TabStop = false;
-            // 
-            // guna2PictureBox2
-            // 
-            this.guna2PictureBox2.Image = global::Spotify.Properties.Resources.icons8_house_48;
-            this.guna2PictureBox2.ImageRotate = 0F;
-            this.guna2PictureBox2.Location = new System.Drawing.Point(3, 3);
-            this.guna2PictureBox2.Name = "guna2PictureBox2";
-            this.guna2PictureBox2.Size = new System.Drawing.Size(30, 30);
-            this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox2.TabIndex = 0;
-            this.guna2PictureBox2.TabStop = false;
-            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -608,27 +615,27 @@
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel4.ResumeLayout(false);
             this.guna2Panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).EndInit();
             this.guna2Panel3.ResumeLayout(false);
             this.guna2Panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
             this.guna2Panel2.ResumeLayout(false);
             this.guna2Panel6.ResumeLayout(false);
-            this.guna2Panel7.ResumeLayout(false);
-            this.guna2Panel7.PerformLayout();
-            this.guna2Panel5.ResumeLayout(false);
-            this.guna2Panel5.PerformLayout();
-            this.guna2Panel10.ResumeLayout(false);
-            this.guna2Panel10.PerformLayout();
-            this.guna2Panel12.ResumeLayout(false);
-            this.guna2Panel12.PerformLayout();
             this.guna2Panel14.ResumeLayout(false);
             this.guna2Panel14.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox7)).EndInit();
+            this.guna2Panel12.ResumeLayout(false);
+            this.guna2Panel12.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox6)).EndInit();
+            this.guna2Panel10.ResumeLayout(false);
+            this.guna2Panel10.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox5)).EndInit();
+            this.guna2Panel7.ResumeLayout(false);
+            this.guna2Panel7.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
+            this.guna2Panel5.ResumeLayout(false);
+            this.guna2Panel5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }

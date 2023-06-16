@@ -38,6 +38,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Your_playlist";
             this.Text = "Your_playlist";
+            this.Load += new System.EventHandler(this.Your_playlist_Load);
             this.ResumeLayout(false);
 
         }

@@ -91,6 +91,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Album.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Album.Designer.cs">
+      <DependentUpon>Album.cs</DependentUpon>
+    </Compile>
     <Compile Include="Dashboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -102,6 +108,18 @@
     </Compile>
     <Compile Include="Forgot_pass.Designer.cs">
       <DependentUpon>Forgot_pass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gleb.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gleb.Designer.cs">
+      <DependentUpon>Gleb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -122,11 +140,38 @@
     <Compile Include="Register.Designer.cs">
       <DependentUpon>Register.cs</DependentUpon>
     </Compile>
+    <Compile Include="Saul.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Saul.Designer.cs">
+      <DependentUpon>Saul.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Search.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Search.Designer.cs">
+      <DependentUpon>Search.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Your_playlist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Your_playlist.Designer.cs">
+      <DependentUpon>Your_playlist.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Album.resx">
+      <DependentUpon>Album.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forgot_pass.resx">
       <DependentUpon>Forgot_pass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gleb.resx">
+      <DependentUpon>Gleb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -138,6 +183,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Register.resx">
       <DependentUpon>Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Saul.resx">
+      <DependentUpon>Saul.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Search.resx">
+      <DependentUpon>Search.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Your_playlist.resx">
+      <DependentUpon>Your_playlist.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -182,6 +236,42 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\lsdycham.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-verified-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\saul_oblaky.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\saul_motyl.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\saul_slnovrat.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gleb_background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gleb_background1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gleb_hus.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gleb_komander.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gleb_G.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-play-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-play-641.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-pause-50.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

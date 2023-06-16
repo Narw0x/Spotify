@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Spotify
 {
-    public partial class Flow_odyssey : Form
+    public partial class Album : Form
     {
-        public Flow_odyssey()
+        public Album()
         {
             InitializeComponent();
         }

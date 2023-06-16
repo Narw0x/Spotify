@@ -63,19 +63,20 @@ namespace Spotify
 
         private void guna2HtmlLabel1_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void guna2HtmlLabel3_Click(object sender, EventArgs e)
         {
 
         }
-
         
+
+
 
         private void label1_Click(object sender, EventArgs e)
         {
-
+            openchildFrom(new Saul());
         }
 
         private void guna2Panel7_Paint(object sender, PaintEventArgs e)
@@ -88,8 +89,32 @@ namespace Spotify
         Rectangle TopRight { get { return new Rectangle(this.ClientSize.Width - _, 0, _, _); } }
         Rectangle BottomLeft { get { return new Rectangle(0, this.ClientSize.Height - _, _, _); } }
         Rectangle BottomRight { get { return new Rectangle(this.ClientSize.Width - _, this.ClientSize.Height - _, _, _); } }
- 
-        
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+            openchildFrom(new Gleb());
+        }
+
+        private void guna2PictureBox5_Click(object sender, EventArgs e)
+        {
+            openchildFrom(new Gleb());
+        }
+
+        private void guna2PictureBox1_Click(object sender, EventArgs e)
+        {
+            openchildFrom(new Saul());
+        }
+
+        private void guna2Panel3_Paint(object sender, PaintEventArgs e)
+        {
+            
+        }
+
+        private void guna2PictureBox2_Click(object sender, EventArgs e)
+        {
+            openchildFrom(new Home());
+        }
+
         private void guna2Button1_Click(object sender, EventArgs e)
         {
             if (guna2Button3.Checked == false)
@@ -261,8 +286,8 @@ namespace Spotify
                 else if (Bottomm.Contains(cursor)) message.Result = (IntPtr)HTBOTTOM;
             }
         }
-        private Form activeform = null;
-        private void openchildFrom(Form childForm)
+        public static Form activeform = null;
+        public void openchildFrom(Form childForm)
         {
             if (activeform != null)
             {
@@ -272,6 +297,7 @@ namespace Spotify
             childForm.TopLevel = false;
             childForm.FormBorderStyle = FormBorderStyle.None;
             childForm.Dock = DockStyle.Fill;
+            panelchildform.BorderRadius = 10;
             panelchildform.Controls.Add(childForm);
             panelchildform.Tag = childForm;
             childForm.BringToFront();
@@ -282,7 +308,8 @@ namespace Spotify
         
         private void Dashboard_Load(object sender, EventArgs e)
         {
-
+            openchildFrom(new Home());
+            
         }
     }
 }

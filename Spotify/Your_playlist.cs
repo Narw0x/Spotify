@@ -16,5 +16,10 @@ namespace Spotify
         {
             InitializeComponent();
         }
+
+        private void Your_playlist_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
