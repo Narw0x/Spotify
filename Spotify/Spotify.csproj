@@ -273,5 +273,23 @@
   <ItemGroup>
     <None Include="Resources\icons8-pause-50.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jurco.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-heart-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-heart-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flow_kacey.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flow_stick.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flow_spin.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

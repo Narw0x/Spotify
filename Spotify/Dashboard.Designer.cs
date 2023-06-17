@@ -288,6 +288,7 @@
             this.label8.Size = new System.Drawing.Size(95, 20);
             this.label8.TabIndex = 1;
             this.label8.Text = "Your playlist";
+            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // guna2PictureBox7
             // 
@@ -301,6 +302,7 @@
             this.guna2PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox7.TabIndex = 0;
             this.guna2PictureBox7.TabStop = false;
+            this.guna2PictureBox7.Click += new System.EventHandler(this.guna2PictureBox7_Click);
             // 
             // guna2Panel11
             // 
@@ -347,6 +349,7 @@
             this.label6.Size = new System.Drawing.Size(104, 20);
             this.label6.TabIndex = 1;
             this.label6.Text = "Flow Odyssey";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // guna2PictureBox6
             // 
@@ -360,6 +363,7 @@
             this.guna2PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox6.TabIndex = 0;
             this.guna2PictureBox6.TabStop = false;
+            this.guna2PictureBox6.Click += new System.EventHandler(this.guna2PictureBox6_Click);
             // 
             // guna2Panel9
             // 

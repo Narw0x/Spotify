@@ -115,6 +115,26 @@ namespace Spotify
             openchildFrom(new Home());
         }
 
+        private void label6_Click(object sender, EventArgs e)
+        {
+            openchildFrom(new Album());
+        }
+
+        private void guna2PictureBox6_Click(object sender, EventArgs e)
+        {
+            openchildFrom(new Album());
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+            openchildFrom(new Your_playlist());
+        }
+
+        private void guna2PictureBox7_Click(object sender, EventArgs e)
+        {
+            openchildFrom(new Your_playlist());
+        }
+
         private void guna2Button1_Click(object sender, EventArgs e)
         {
             if (guna2Button3.Checked == false)

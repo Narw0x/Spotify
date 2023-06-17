@@ -63,6 +63,36 @@ namespace Spotify.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap flow_kacey {
+            get {
+                object obj = ResourceManager.GetObject("flow_kacey", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap flow_spin {
+            get {
+                object obj = ResourceManager.GetObject("flow_spin", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap flow_stick {
+            get {
+                object obj = ResourceManager.GetObject("flow_stick", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap flowodyssey {
             get {
                 object obj = ResourceManager.GetObject("flowodyssey", resourceCulture);
@@ -133,6 +163,26 @@ namespace Spotify.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_heart_24 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-heart-24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_heart_30 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-heart-30", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_house_48 {
             get {
                 object obj = ResourceManager.GetObject("icons8-house-48", resourceCulture);
@@ -196,6 +246,16 @@ namespace Spotify.Properties {
         internal static System.Drawing.Bitmap icons8_verified_48 {
             get {
                 object obj = ResourceManager.GetObject("icons8-verified-48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap jurco {
+            get {
+                object obj = ResourceManager.GetObject("jurco", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

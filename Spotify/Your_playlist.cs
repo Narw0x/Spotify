@@ -21,5 +21,68 @@ namespace Spotify
         {
 
         }
+
+        private void guna2ImageButton2_Click(object sender, EventArgs e)
+        {
+            if (guna2ImageButton2.Checked == false)
+            {
+                guna2ImageButton2.Checked = true;
+            }
+            else
+            {
+                guna2ImageButton2.Checked = false;
+            }
+            
+            if (guna2ImageButton3.Checked == true)
+            {
+                guna2ImageButton3.Checked = false;
+            }
+            if (guna2ImageButton4.Checked == true)
+            {
+                guna2ImageButton4.Checked = false;
+            }
+        }
+
+        private void guna2ImageButton3_Click(object sender, EventArgs e)
+        {
+            if (guna2ImageButton3.Checked == false)
+            {
+                guna2ImageButton3.Checked = true;
+            }
+            else
+            {
+                guna2ImageButton3.Checked = false;
+            }
+            
+            if (guna2ImageButton2.Checked == true)
+            {
+                guna2ImageButton2.Checked = false;
+            }
+            if (guna2ImageButton4.Checked == true)
+            {
+                guna2ImageButton4.Checked = false;
+            }
+        }
+
+        private void guna2ImageButton4_Click(object sender, EventArgs e)
+        {
+            if (guna2ImageButton4.Checked == false)
+            {
+                guna2ImageButton4.Checked = true;
+            }
+            else
+            {
+                guna2ImageButton4.Checked = false;
+            }
+            
+            if (guna2ImageButton3.Checked == true)
+            {
+                guna2ImageButton3.Checked = false;
+            }
+            if (guna2ImageButton2.Checked == true)
+            {
+                guna2ImageButton2.Checked = false;
+            }
+        }
     }
 }
