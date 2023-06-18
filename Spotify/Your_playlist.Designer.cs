@@ -81,6 +81,7 @@
             // 
             // guna2Panel3
             // 
+            this.guna2Panel3.AutoScroll = true;
             this.guna2Panel3.BackColor = System.Drawing.Color.Black;
             this.guna2Panel3.BorderRadius = 10;
             this.guna2Panel3.Controls.Add(this.guna2Panel6);
@@ -420,6 +421,7 @@
             // 
             // guna2Panel2
             // 
+            this.guna2Panel2.AutoScroll = true;
             this.guna2Panel2.BackColor = System.Drawing.Color.Black;
             this.guna2Panel2.BorderRadius = 10;
             this.guna2Panel2.Controls.Add(this.guna2HtmlLabel2);

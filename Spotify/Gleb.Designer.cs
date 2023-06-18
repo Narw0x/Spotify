@@ -32,40 +32,40 @@
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Panel6 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2ImageButton3 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2HtmlLabel11 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel12 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2HtmlLabel13 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Panel5 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2HtmlLabel8 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel9 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2HtmlLabel10 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2ImageButton2 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2HtmlLabel7 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2PictureBox4 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2CirclePictureBox2 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2PictureBox4 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2CirclePictureBox2 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2ImageButton2 = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.guna2ImageButton3 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2Panel1.SuspendLayout();
             this.guna2Panel3.SuspendLayout();
             this.guna2Panel6.SuspendLayout();
-            this.guna2Panel5.SuspendLayout();
-            this.guna2Panel4.SuspendLayout();
-            this.guna2Panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
+            this.guna2Panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
+            this.guna2Panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox2)).BeginInit();
+            this.guna2Panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -81,6 +81,7 @@
             // 
             // guna2Panel3
             // 
+            this.guna2Panel3.AutoScroll = true;
             this.guna2Panel3.BorderRadius = 10;
             this.guna2Panel3.Controls.Add(this.guna2HtmlLabel4);
             this.guna2Panel3.Controls.Add(this.guna2Panel6);
@@ -127,6 +128,25 @@
             this.guna2Panel6.Size = new System.Drawing.Size(730, 56);
             this.guna2Panel6.TabIndex = 104;
             // 
+            // guna2ImageButton3
+            // 
+            this.guna2ImageButton3.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ImageButton3.CheckedState.Image = global::Spotify.Properties.Resources.icons8_pause_50;
+            this.guna2ImageButton3.CheckedState.ImageSize = new System.Drawing.Size(42, 42);
+            this.guna2ImageButton3.HoverState.Image = global::Spotify.Properties.Resources.icons8_play_641;
+            this.guna2ImageButton3.HoverState.ImageSize = new System.Drawing.Size(40, 40);
+            this.guna2ImageButton3.Image = global::Spotify.Properties.Resources.icons8_play_641;
+            this.guna2ImageButton3.ImageOffset = new System.Drawing.Point(0, 0);
+            this.guna2ImageButton3.ImageRotate = 0F;
+            this.guna2ImageButton3.ImageSize = new System.Drawing.Size(40, 40);
+            this.guna2ImageButton3.Location = new System.Drawing.Point(669, 9);
+            this.guna2ImageButton3.Name = "guna2ImageButton3";
+            this.guna2ImageButton3.PressedState.Image = global::Spotify.Properties.Resources.icons8_pause_50;
+            this.guna2ImageButton3.PressedState.ImageSize = new System.Drawing.Size(40, 40);
+            this.guna2ImageButton3.Size = new System.Drawing.Size(40, 40);
+            this.guna2ImageButton3.TabIndex = 13;
+            this.guna2ImageButton3.Click += new System.EventHandler(this.guna2ImageButton3_Click);
+            // 
             // guna2HtmlLabel11
             // 
             this.guna2HtmlLabel11.BackColor = System.Drawing.Color.Transparent;
@@ -150,6 +170,18 @@
             this.guna2HtmlLabel12.Size = new System.Drawing.Size(53, 23);
             this.guna2HtmlLabel12.TabIndex = 9;
             this.guna2HtmlLabel12.Text = "Hey G!";
+            // 
+            // guna2PictureBox3
+            // 
+            this.guna2PictureBox3.Image = global::Spotify.Properties.Resources.gleb_G;
+            this.guna2PictureBox3.ImageRotate = 0F;
+            this.guna2PictureBox3.Location = new System.Drawing.Point(79, 9);
+            this.guna2PictureBox3.Margin = new System.Windows.Forms.Padding(3, 9, 3, 3);
+            this.guna2PictureBox3.Name = "guna2PictureBox3";
+            this.guna2PictureBox3.Size = new System.Drawing.Size(40, 40);
+            this.guna2PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2PictureBox3.TabIndex = 8;
+            this.guna2PictureBox3.TabStop = false;
             // 
             // guna2HtmlLabel13
             // 
@@ -178,6 +210,25 @@
             this.guna2Panel5.Size = new System.Drawing.Size(730, 56);
             this.guna2Panel5.TabIndex = 103;
             // 
+            // guna2ImageButton1
+            // 
+            this.guna2ImageButton1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ImageButton1.CheckedState.Image = global::Spotify.Properties.Resources.icons8_pause_50;
+            this.guna2ImageButton1.CheckedState.ImageSize = new System.Drawing.Size(42, 42);
+            this.guna2ImageButton1.HoverState.Image = global::Spotify.Properties.Resources.icons8_play_641;
+            this.guna2ImageButton1.HoverState.ImageSize = new System.Drawing.Size(40, 40);
+            this.guna2ImageButton1.Image = global::Spotify.Properties.Resources.icons8_play_641;
+            this.guna2ImageButton1.ImageOffset = new System.Drawing.Point(0, 0);
+            this.guna2ImageButton1.ImageRotate = 0F;
+            this.guna2ImageButton1.ImageSize = new System.Drawing.Size(40, 40);
+            this.guna2ImageButton1.Location = new System.Drawing.Point(669, 9);
+            this.guna2ImageButton1.Name = "guna2ImageButton1";
+            this.guna2ImageButton1.PressedState.Image = global::Spotify.Properties.Resources.icons8_pause_50;
+            this.guna2ImageButton1.PressedState.ImageSize = new System.Drawing.Size(40, 40);
+            this.guna2ImageButton1.Size = new System.Drawing.Size(40, 40);
+            this.guna2ImageButton1.TabIndex = 13;
+            this.guna2ImageButton1.Click += new System.EventHandler(this.guna2ImageButton1_Click);
+            // 
             // guna2HtmlLabel8
             // 
             this.guna2HtmlLabel8.BackColor = System.Drawing.Color.Transparent;
@@ -201,6 +252,18 @@
             this.guna2HtmlLabel9.Size = new System.Drawing.Size(190, 23);
             this.guna2HtmlLabel9.TabIndex = 9;
             this.guna2HtmlLabel9.Text = "KOMANDER PUMP IT UP";
+            // 
+            // guna2PictureBox2
+            // 
+            this.guna2PictureBox2.Image = global::Spotify.Properties.Resources.gleb_komander;
+            this.guna2PictureBox2.ImageRotate = 0F;
+            this.guna2PictureBox2.Location = new System.Drawing.Point(79, 9);
+            this.guna2PictureBox2.Margin = new System.Windows.Forms.Padding(3, 9, 3, 3);
+            this.guna2PictureBox2.Name = "guna2PictureBox2";
+            this.guna2PictureBox2.Size = new System.Drawing.Size(40, 40);
+            this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2PictureBox2.TabIndex = 8;
+            this.guna2PictureBox2.TabStop = false;
             // 
             // guna2HtmlLabel10
             // 
@@ -229,6 +292,25 @@
             this.guna2Panel4.Size = new System.Drawing.Size(730, 56);
             this.guna2Panel4.TabIndex = 102;
             // 
+            // guna2ImageButton2
+            // 
+            this.guna2ImageButton2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ImageButton2.CheckedState.Image = global::Spotify.Properties.Resources.icons8_pause_50;
+            this.guna2ImageButton2.CheckedState.ImageSize = new System.Drawing.Size(42, 42);
+            this.guna2ImageButton2.HoverState.Image = global::Spotify.Properties.Resources.icons8_play_641;
+            this.guna2ImageButton2.HoverState.ImageSize = new System.Drawing.Size(40, 40);
+            this.guna2ImageButton2.Image = global::Spotify.Properties.Resources.icons8_play_641;
+            this.guna2ImageButton2.ImageOffset = new System.Drawing.Point(0, 0);
+            this.guna2ImageButton2.ImageRotate = 0F;
+            this.guna2ImageButton2.ImageSize = new System.Drawing.Size(40, 40);
+            this.guna2ImageButton2.Location = new System.Drawing.Point(669, 9);
+            this.guna2ImageButton2.Name = "guna2ImageButton2";
+            this.guna2ImageButton2.PressedState.Image = global::Spotify.Properties.Resources.icons8_pause_50;
+            this.guna2ImageButton2.PressedState.ImageSize = new System.Drawing.Size(40, 40);
+            this.guna2ImageButton2.Size = new System.Drawing.Size(40, 40);
+            this.guna2ImageButton2.TabIndex = 13;
+            this.guna2ImageButton2.Click += new System.EventHandler(this.guna2ImageButton2_Click);
+            // 
             // guna2HtmlLabel7
             // 
             this.guna2HtmlLabel7.BackColor = System.Drawing.Color.Transparent;
@@ -252,6 +334,18 @@
             this.guna2HtmlLabel6.Size = new System.Drawing.Size(71, 23);
             this.guna2HtmlLabel6.TabIndex = 9;
             this.guna2HtmlLabel6.Text = "Šedá hus";
+            // 
+            // guna2PictureBox4
+            // 
+            this.guna2PictureBox4.Image = global::Spotify.Properties.Resources.gleb_hus;
+            this.guna2PictureBox4.ImageRotate = 0F;
+            this.guna2PictureBox4.Location = new System.Drawing.Point(79, 9);
+            this.guna2PictureBox4.Margin = new System.Windows.Forms.Padding(3, 9, 3, 3);
+            this.guna2PictureBox4.Name = "guna2PictureBox4";
+            this.guna2PictureBox4.Size = new System.Drawing.Size(40, 40);
+            this.guna2PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2PictureBox4.TabIndex = 8;
+            this.guna2PictureBox4.TabStop = false;
             // 
             // guna2HtmlLabel5
             // 
@@ -288,6 +382,19 @@
             this.guna2Button1.TabIndex = 101;
             this.guna2Button1.Text = "FOLLOW";
             this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
+            // 
+            // guna2CirclePictureBox2
+            // 
+            this.guna2CirclePictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2CirclePictureBox2.Image = global::Spotify.Properties.Resources.icons8_verified_48;
+            this.guna2CirclePictureBox2.ImageRotate = 0F;
+            this.guna2CirclePictureBox2.Location = new System.Drawing.Point(21, 16);
+            this.guna2CirclePictureBox2.Name = "guna2CirclePictureBox2";
+            this.guna2CirclePictureBox2.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.guna2CirclePictureBox2.Size = new System.Drawing.Size(24, 24);
+            this.guna2CirclePictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2CirclePictureBox2.TabIndex = 12;
+            this.guna2CirclePictureBox2.TabStop = false;
             // 
             // guna2HtmlLabel3
             // 
@@ -334,55 +441,6 @@
             this.guna2Panel2.Size = new System.Drawing.Size(765, 255);
             this.guna2Panel2.TabIndex = 0;
             // 
-            // guna2PictureBox3
-            // 
-            this.guna2PictureBox3.Image = global::Spotify.Properties.Resources.gleb_G;
-            this.guna2PictureBox3.ImageRotate = 0F;
-            this.guna2PictureBox3.Location = new System.Drawing.Point(79, 9);
-            this.guna2PictureBox3.Margin = new System.Windows.Forms.Padding(3, 9, 3, 3);
-            this.guna2PictureBox3.Name = "guna2PictureBox3";
-            this.guna2PictureBox3.Size = new System.Drawing.Size(40, 40);
-            this.guna2PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox3.TabIndex = 8;
-            this.guna2PictureBox3.TabStop = false;
-            // 
-            // guna2PictureBox2
-            // 
-            this.guna2PictureBox2.Image = global::Spotify.Properties.Resources.gleb_komander;
-            this.guna2PictureBox2.ImageRotate = 0F;
-            this.guna2PictureBox2.Location = new System.Drawing.Point(79, 9);
-            this.guna2PictureBox2.Margin = new System.Windows.Forms.Padding(3, 9, 3, 3);
-            this.guna2PictureBox2.Name = "guna2PictureBox2";
-            this.guna2PictureBox2.Size = new System.Drawing.Size(40, 40);
-            this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox2.TabIndex = 8;
-            this.guna2PictureBox2.TabStop = false;
-            // 
-            // guna2PictureBox4
-            // 
-            this.guna2PictureBox4.Image = global::Spotify.Properties.Resources.gleb_hus;
-            this.guna2PictureBox4.ImageRotate = 0F;
-            this.guna2PictureBox4.Location = new System.Drawing.Point(79, 9);
-            this.guna2PictureBox4.Margin = new System.Windows.Forms.Padding(3, 9, 3, 3);
-            this.guna2PictureBox4.Name = "guna2PictureBox4";
-            this.guna2PictureBox4.Size = new System.Drawing.Size(40, 40);
-            this.guna2PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox4.TabIndex = 8;
-            this.guna2PictureBox4.TabStop = false;
-            // 
-            // guna2CirclePictureBox2
-            // 
-            this.guna2CirclePictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2CirclePictureBox2.Image = global::Spotify.Properties.Resources.icons8_verified_48;
-            this.guna2CirclePictureBox2.ImageRotate = 0F;
-            this.guna2CirclePictureBox2.Location = new System.Drawing.Point(21, 16);
-            this.guna2CirclePictureBox2.Name = "guna2CirclePictureBox2";
-            this.guna2CirclePictureBox2.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CirclePictureBox2.Size = new System.Drawing.Size(24, 24);
-            this.guna2CirclePictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2CirclePictureBox2.TabIndex = 12;
-            this.guna2CirclePictureBox2.TabStop = false;
-            // 
             // guna2PictureBox1
             // 
             this.guna2PictureBox1.BorderRadius = 10;
@@ -394,63 +452,6 @@
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox1.TabIndex = 0;
             this.guna2PictureBox1.TabStop = false;
-            // 
-            // guna2ImageButton2
-            // 
-            this.guna2ImageButton2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ImageButton2.CheckedState.Image = global::Spotify.Properties.Resources.icons8_pause_50;
-            this.guna2ImageButton2.CheckedState.ImageSize = new System.Drawing.Size(42, 42);
-            this.guna2ImageButton2.HoverState.Image = global::Spotify.Properties.Resources.icons8_play_641;
-            this.guna2ImageButton2.HoverState.ImageSize = new System.Drawing.Size(40, 40);
-            this.guna2ImageButton2.Image = global::Spotify.Properties.Resources.icons8_play_641;
-            this.guna2ImageButton2.ImageOffset = new System.Drawing.Point(0, 0);
-            this.guna2ImageButton2.ImageRotate = 0F;
-            this.guna2ImageButton2.ImageSize = new System.Drawing.Size(40, 40);
-            this.guna2ImageButton2.Location = new System.Drawing.Point(669, 9);
-            this.guna2ImageButton2.Name = "guna2ImageButton2";
-            this.guna2ImageButton2.PressedState.Image = global::Spotify.Properties.Resources.icons8_pause_50;
-            this.guna2ImageButton2.PressedState.ImageSize = new System.Drawing.Size(40, 40);
-            this.guna2ImageButton2.Size = new System.Drawing.Size(40, 40);
-            this.guna2ImageButton2.TabIndex = 13;
-            this.guna2ImageButton2.Click += new System.EventHandler(this.guna2ImageButton2_Click);
-            // 
-            // guna2ImageButton1
-            // 
-            this.guna2ImageButton1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ImageButton1.CheckedState.Image = global::Spotify.Properties.Resources.icons8_pause_50;
-            this.guna2ImageButton1.CheckedState.ImageSize = new System.Drawing.Size(42, 42);
-            this.guna2ImageButton1.HoverState.Image = global::Spotify.Properties.Resources.icons8_play_641;
-            this.guna2ImageButton1.HoverState.ImageSize = new System.Drawing.Size(40, 40);
-            this.guna2ImageButton1.Image = global::Spotify.Properties.Resources.icons8_play_641;
-            this.guna2ImageButton1.ImageOffset = new System.Drawing.Point(0, 0);
-            this.guna2ImageButton1.ImageRotate = 0F;
-            this.guna2ImageButton1.ImageSize = new System.Drawing.Size(40, 40);
-            this.guna2ImageButton1.Location = new System.Drawing.Point(669, 9);
-            this.guna2ImageButton1.Name = "guna2ImageButton1";
-            this.guna2ImageButton1.PressedState.Image = global::Spotify.Properties.Resources.icons8_pause_50;
-            this.guna2ImageButton1.PressedState.ImageSize = new System.Drawing.Size(40, 40);
-            this.guna2ImageButton1.Size = new System.Drawing.Size(40, 40);
-            this.guna2ImageButton1.TabIndex = 13;
-            this.guna2ImageButton1.Click += new System.EventHandler(this.guna2ImageButton1_Click);
-            // 
-            // guna2ImageButton3
-            // 
-            this.guna2ImageButton3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ImageButton3.CheckedState.Image = global::Spotify.Properties.Resources.icons8_pause_50;
-            this.guna2ImageButton3.CheckedState.ImageSize = new System.Drawing.Size(42, 42);
-            this.guna2ImageButton3.HoverState.Image = global::Spotify.Properties.Resources.icons8_play_641;
-            this.guna2ImageButton3.HoverState.ImageSize = new System.Drawing.Size(40, 40);
-            this.guna2ImageButton3.Image = global::Spotify.Properties.Resources.icons8_play_641;
-            this.guna2ImageButton3.ImageOffset = new System.Drawing.Point(0, 0);
-            this.guna2ImageButton3.ImageRotate = 0F;
-            this.guna2ImageButton3.ImageSize = new System.Drawing.Size(40, 40);
-            this.guna2ImageButton3.Location = new System.Drawing.Point(669, 9);
-            this.guna2ImageButton3.Name = "guna2ImageButton3";
-            this.guna2ImageButton3.PressedState.Image = global::Spotify.Properties.Resources.icons8_pause_50;
-            this.guna2ImageButton3.PressedState.ImageSize = new System.Drawing.Size(40, 40);
-            this.guna2ImageButton3.Size = new System.Drawing.Size(40, 40);
-            this.guna2ImageButton3.TabIndex = 13;
-            this.guna2ImageButton3.Click += new System.EventHandler(this.guna2ImageButton3_Click);
             // 
             // Gleb
             // 
@@ -466,15 +467,15 @@
             this.guna2Panel3.PerformLayout();
             this.guna2Panel6.ResumeLayout(false);
             this.guna2Panel6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).EndInit();
             this.guna2Panel5.ResumeLayout(false);
             this.guna2Panel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
             this.guna2Panel4.ResumeLayout(false);
             this.guna2Panel4.PerformLayout();
-            this.guna2Panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox2)).EndInit();
+            this.guna2Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.ResumeLayout(false);
 

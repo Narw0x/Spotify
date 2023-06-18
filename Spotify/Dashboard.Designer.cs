@@ -28,62 +28,80 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.guna2ControlBox3 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel6 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel13 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel14 = new Guna.UI2.WinForms.Guna2Panel();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.guna2PictureBox7 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Panel11 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel12 = new Guna.UI2.WinForms.Guna2Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.guna2PictureBox6 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Panel9 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel10 = new Guna.UI2.WinForms.Guna2Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.guna2PictureBox5 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Panel8 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel7 = new Guna.UI2.WinForms.Guna2Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel5 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2PictureBox4 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.panelchildform = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.song_panel = new Guna.UI2.WinForms.Guna2Panel();
+            this.song_rn_time = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.song_time = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2TrackBar1 = new Guna.UI2.WinForms.Guna2TrackBar();
+            this.song_name = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2PictureBox10 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2PictureBox9 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2PictureBox8 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.song_play_btn = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.song_picture = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2PictureBox7 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2PictureBox6 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2PictureBox5 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2PictureBox4 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2TrackBar2 = new Guna.UI2.WinForms.Guna2TrackBar();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.guna2Panel1.SuspendLayout();
             this.guna2Panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
             this.guna2Panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             this.guna2Panel2.SuspendLayout();
             this.guna2Panel6.SuspendLayout();
             this.guna2Panel14.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox7)).BeginInit();
             this.guna2Panel12.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox6)).BeginInit();
             this.guna2Panel10.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox5)).BeginInit();
             this.guna2Panel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.guna2Panel5.SuspendLayout();
+            this.song_panel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.song_picture)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2ControlBox3
@@ -140,7 +158,7 @@
             // 
             this.guna2Panel4.Controls.Add(this.guna2HtmlLabel2);
             this.guna2Panel4.Controls.Add(this.guna2PictureBox3);
-            this.guna2Panel4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2Panel4.Cursor = System.Windows.Forms.Cursors.Default;
             this.guna2Panel4.Location = new System.Drawing.Point(15, 53);
             this.guna2Panel4.Name = "guna2Panel4";
             this.guna2Panel4.Size = new System.Drawing.Size(286, 35);
@@ -158,22 +176,11 @@
             this.guna2HtmlLabel2.TabIndex = 2;
             this.guna2HtmlLabel2.Text = "Search";
             // 
-            // guna2PictureBox3
-            // 
-            this.guna2PictureBox3.Image = global::Spotify.Properties.Resources.icons8_search_30;
-            this.guna2PictureBox3.ImageRotate = 0F;
-            this.guna2PictureBox3.Location = new System.Drawing.Point(3, 3);
-            this.guna2PictureBox3.Name = "guna2PictureBox3";
-            this.guna2PictureBox3.Size = new System.Drawing.Size(30, 30);
-            this.guna2PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox3.TabIndex = 0;
-            this.guna2PictureBox3.TabStop = false;
-            // 
             // guna2Panel3
             // 
             this.guna2Panel3.Controls.Add(this.guna2HtmlLabel1);
             this.guna2Panel3.Controls.Add(this.guna2PictureBox2);
-            this.guna2Panel3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2Panel3.Cursor = System.Windows.Forms.Cursors.Default;
             this.guna2Panel3.Location = new System.Drawing.Point(15, 12);
             this.guna2Panel3.Name = "guna2Panel3";
             this.guna2Panel3.Size = new System.Drawing.Size(286, 35);
@@ -192,18 +199,6 @@
             this.guna2HtmlLabel1.TabIndex = 1;
             this.guna2HtmlLabel1.Text = "Home";
             this.guna2HtmlLabel1.Click += new System.EventHandler(this.guna2HtmlLabel1_Click);
-            // 
-            // guna2PictureBox2
-            // 
-            this.guna2PictureBox2.Image = global::Spotify.Properties.Resources.icons8_house_48;
-            this.guna2PictureBox2.ImageRotate = 0F;
-            this.guna2PictureBox2.Location = new System.Drawing.Point(3, 3);
-            this.guna2PictureBox2.Name = "guna2PictureBox2";
-            this.guna2PictureBox2.Size = new System.Drawing.Size(30, 30);
-            this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox2.TabIndex = 0;
-            this.guna2PictureBox2.TabStop = false;
-            this.guna2PictureBox2.Click += new System.EventHandler(this.guna2PictureBox2_Click);
             // 
             // guna2Panel2
             // 
@@ -290,20 +285,6 @@
             this.label8.Text = "Your playlist";
             this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
-            // guna2PictureBox7
-            // 
-            this.guna2PictureBox7.BorderRadius = 10;
-            this.guna2PictureBox7.Image = global::Spotify.Properties.Resources.lsdycham;
-            this.guna2PictureBox7.ImageRotate = 0F;
-            this.guna2PictureBox7.Location = new System.Drawing.Point(12, 12);
-            this.guna2PictureBox7.Margin = new System.Windows.Forms.Padding(12);
-            this.guna2PictureBox7.Name = "guna2PictureBox7";
-            this.guna2PictureBox7.Size = new System.Drawing.Size(59, 58);
-            this.guna2PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox7.TabIndex = 0;
-            this.guna2PictureBox7.TabStop = false;
-            this.guna2PictureBox7.Click += new System.EventHandler(this.guna2PictureBox7_Click);
-            // 
             // guna2Panel11
             // 
             this.guna2Panel11.Dock = System.Windows.Forms.DockStyle.Top;
@@ -350,20 +331,6 @@
             this.label6.TabIndex = 1;
             this.label6.Text = "Flow Odyssey";
             this.label6.Click += new System.EventHandler(this.label6_Click);
-            // 
-            // guna2PictureBox6
-            // 
-            this.guna2PictureBox6.BorderRadius = 10;
-            this.guna2PictureBox6.Image = global::Spotify.Properties.Resources.flowodyssey;
-            this.guna2PictureBox6.ImageRotate = 0F;
-            this.guna2PictureBox6.Location = new System.Drawing.Point(12, 12);
-            this.guna2PictureBox6.Margin = new System.Windows.Forms.Padding(12);
-            this.guna2PictureBox6.Name = "guna2PictureBox6";
-            this.guna2PictureBox6.Size = new System.Drawing.Size(59, 58);
-            this.guna2PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox6.TabIndex = 0;
-            this.guna2PictureBox6.TabStop = false;
-            this.guna2PictureBox6.Click += new System.EventHandler(this.guna2PictureBox6_Click);
             // 
             // guna2Panel9
             // 
@@ -412,20 +379,6 @@
             this.label4.Text = "Gleb";
             this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
-            // guna2PictureBox5
-            // 
-            this.guna2PictureBox5.BorderRadius = 30;
-            this.guna2PictureBox5.Image = global::Spotify.Properties.Resources.gleb;
-            this.guna2PictureBox5.ImageRotate = 0F;
-            this.guna2PictureBox5.Location = new System.Drawing.Point(12, 12);
-            this.guna2PictureBox5.Margin = new System.Windows.Forms.Padding(12);
-            this.guna2PictureBox5.Name = "guna2PictureBox5";
-            this.guna2PictureBox5.Size = new System.Drawing.Size(59, 58);
-            this.guna2PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox5.TabIndex = 0;
-            this.guna2PictureBox5.TabStop = false;
-            this.guna2PictureBox5.Click += new System.EventHandler(this.guna2PictureBox5_Click);
-            // 
             // guna2Panel8
             // 
             this.guna2Panel8.Dock = System.Windows.Forms.DockStyle.Top;
@@ -473,20 +426,6 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Saul";
             this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // guna2PictureBox1
-            // 
-            this.guna2PictureBox1.BorderRadius = 30;
-            this.guna2PictureBox1.Image = global::Spotify.Properties.Resources.saul;
-            this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(12, 12);
-            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(12);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(59, 58);
-            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox1.TabIndex = 0;
-            this.guna2PictureBox1.TabStop = false;
-            this.guna2PictureBox1.Click += new System.EventHandler(this.guna2PictureBox1_Click);
             // 
             // guna2Button3
             // 
@@ -560,17 +499,6 @@
             this.guna2Panel5.Size = new System.Drawing.Size(286, 35);
             this.guna2Panel5.TabIndex = 1;
             // 
-            // guna2PictureBox4
-            // 
-            this.guna2PictureBox4.Image = global::Spotify.Properties.Resources.icons8_library_50;
-            this.guna2PictureBox4.ImageRotate = 0F;
-            this.guna2PictureBox4.Location = new System.Drawing.Point(3, 3);
-            this.guna2PictureBox4.Name = "guna2PictureBox4";
-            this.guna2PictureBox4.Size = new System.Drawing.Size(30, 30);
-            this.guna2PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox4.TabIndex = 2;
-            this.guna2PictureBox4.TabStop = false;
-            // 
             // guna2HtmlLabel3
             // 
             this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
@@ -598,12 +526,247 @@
             this.panelchildform.Size = new System.Drawing.Size(763, 657);
             this.panelchildform.TabIndex = 0;
             // 
+            // song_panel
+            // 
+            this.song_panel.Controls.Add(this.guna2TrackBar2);
+            this.song_panel.Controls.Add(this.guna2PictureBox10);
+            this.song_panel.Controls.Add(this.guna2PictureBox9);
+            this.song_panel.Controls.Add(this.guna2PictureBox8);
+            this.song_panel.Controls.Add(this.song_play_btn);
+            this.song_panel.Controls.Add(this.song_rn_time);
+            this.song_panel.Controls.Add(this.song_time);
+            this.song_panel.Controls.Add(this.guna2TrackBar1);
+            this.song_panel.Controls.Add(this.song_name);
+            this.song_panel.Controls.Add(this.song_picture);
+            this.song_panel.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.song_panel.Location = new System.Drawing.Point(0, 630);
+            this.song_panel.Name = "song_panel";
+            this.song_panel.Size = new System.Drawing.Size(1140, 90);
+            this.song_panel.TabIndex = 12;
+            this.song_panel.Paint += new System.Windows.Forms.PaintEventHandler(this.song_panel_Paint);
+            // 
+            // song_rn_time
+            // 
+            this.song_rn_time.BackColor = System.Drawing.Color.Transparent;
+            this.song_rn_time.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.song_rn_time.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.song_rn_time.Location = new System.Drawing.Point(410, 54);
+            this.song_rn_time.Margin = new System.Windows.Forms.Padding(3, 3, 3, 1);
+            this.song_rn_time.Name = "song_rn_time";
+            this.song_rn_time.Size = new System.Drawing.Size(33, 23);
+            this.song_rn_time.TabIndex = 12;
+            this.song_rn_time.Text = "0:00";
+            // 
+            // song_time
+            // 
+            this.song_time.BackColor = System.Drawing.Color.Transparent;
+            this.song_time.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.song_time.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.song_time.Location = new System.Drawing.Point(763, 54);
+            this.song_time.Margin = new System.Windows.Forms.Padding(3, 3, 3, 1);
+            this.song_time.Name = "song_time";
+            this.song_time.Size = new System.Drawing.Size(33, 23);
+            this.song_time.TabIndex = 11;
+            this.song_time.Text = "3:35";
+            // 
+            // guna2TrackBar1
+            // 
+            this.guna2TrackBar1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2TrackBar1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2TrackBar1.FillColor = System.Drawing.Color.White;
+            this.guna2TrackBar1.Location = new System.Drawing.Point(465, 55);
+            this.guna2TrackBar1.Name = "guna2TrackBar1";
+            this.guna2TrackBar1.Size = new System.Drawing.Size(282, 23);
+            this.guna2TrackBar1.TabIndex = 2;
+            this.guna2TrackBar1.ThumbColor = System.Drawing.Color.White;
+            this.guna2TrackBar1.Value = 75;
+            // 
+            // song_name
+            // 
+            this.song_name.BackColor = System.Drawing.Color.Transparent;
+            this.song_name.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.song_name.ForeColor = System.Drawing.Color.White;
+            this.song_name.Location = new System.Drawing.Point(134, 39);
+            this.song_name.Name = "song_name";
+            this.song_name.Size = new System.Drawing.Size(82, 22);
+            this.song_name.TabIndex = 1;
+            this.song_name.Text = "song_name";
+            // 
+            // guna2PictureBox10
+            // 
+            this.guna2PictureBox10.Image = global::Spotify.Properties.Resources.icons8_sound_24;
+            this.guna2PictureBox10.ImageRotate = 0F;
+            this.guna2PictureBox10.Location = new System.Drawing.Point(941, 40);
+            this.guna2PictureBox10.Name = "guna2PictureBox10";
+            this.guna2PictureBox10.Size = new System.Drawing.Size(24, 24);
+            this.guna2PictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2PictureBox10.TabIndex = 17;
+            this.guna2PictureBox10.TabStop = false;
+            // 
+            // guna2PictureBox9
+            // 
+            this.guna2PictureBox9.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2PictureBox9.Image = global::Spotify.Properties.Resources.icons8_previous_50;
+            this.guna2PictureBox9.ImageRotate = 0F;
+            this.guna2PictureBox9.Location = new System.Drawing.Point(523, 20);
+            this.guna2PictureBox9.Name = "guna2PictureBox9";
+            this.guna2PictureBox9.Size = new System.Drawing.Size(35, 35);
+            this.guna2PictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2PictureBox9.TabIndex = 16;
+            this.guna2PictureBox9.TabStop = false;
+            // 
+            // guna2PictureBox8
+            // 
+            this.guna2PictureBox8.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2PictureBox8.Image = global::Spotify.Properties.Resources.icons8_next_50;
+            this.guna2PictureBox8.ImageRotate = 0F;
+            this.guna2PictureBox8.Location = new System.Drawing.Point(653, 20);
+            this.guna2PictureBox8.Name = "guna2PictureBox8";
+            this.guna2PictureBox8.Size = new System.Drawing.Size(35, 35);
+            this.guna2PictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2PictureBox8.TabIndex = 15;
+            this.guna2PictureBox8.TabStop = false;
+            // 
+            // song_play_btn
+            // 
+            this.song_play_btn.CheckedState.Image = global::Spotify.Properties.Resources.icons8_pause_50_white;
+            this.song_play_btn.CheckedState.ImageSize = new System.Drawing.Size(35, 35);
+            this.song_play_btn.HoverState.ImageSize = new System.Drawing.Size(35, 35);
+            this.song_play_btn.Image = global::Spotify.Properties.Resources.icons8_play_50;
+            this.song_play_btn.ImageOffset = new System.Drawing.Point(0, 0);
+            this.song_play_btn.ImageRotate = 0F;
+            this.song_play_btn.ImageSize = new System.Drawing.Size(35, 35);
+            this.song_play_btn.Location = new System.Drawing.Point(589, 20);
+            this.song_play_btn.Name = "song_play_btn";
+            this.song_play_btn.PressedState.ImageSize = new System.Drawing.Size(35, 35);
+            this.song_play_btn.Size = new System.Drawing.Size(35, 35);
+            this.song_play_btn.TabIndex = 14;
+            this.song_play_btn.Click += new System.EventHandler(this.song_play_btn_Click);
+            // 
+            // song_picture
+            // 
+            this.song_picture.FillColor = System.Drawing.Color.Transparent;
+            this.song_picture.ImageRotate = 0F;
+            this.song_picture.Location = new System.Drawing.Point(57, 18);
+            this.song_picture.Name = "song_picture";
+            this.song_picture.Size = new System.Drawing.Size(60, 60);
+            this.song_picture.TabIndex = 0;
+            this.song_picture.TabStop = false;
+            // 
+            // guna2PictureBox7
+            // 
+            this.guna2PictureBox7.BorderRadius = 10;
+            this.guna2PictureBox7.Image = global::Spotify.Properties.Resources.lsdycham;
+            this.guna2PictureBox7.ImageRotate = 0F;
+            this.guna2PictureBox7.Location = new System.Drawing.Point(12, 12);
+            this.guna2PictureBox7.Margin = new System.Windows.Forms.Padding(12);
+            this.guna2PictureBox7.Name = "guna2PictureBox7";
+            this.guna2PictureBox7.Size = new System.Drawing.Size(59, 58);
+            this.guna2PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2PictureBox7.TabIndex = 0;
+            this.guna2PictureBox7.TabStop = false;
+            this.guna2PictureBox7.Click += new System.EventHandler(this.guna2PictureBox7_Click);
+            // 
+            // guna2PictureBox6
+            // 
+            this.guna2PictureBox6.BorderRadius = 10;
+            this.guna2PictureBox6.Image = global::Spotify.Properties.Resources.flowodyssey;
+            this.guna2PictureBox6.ImageRotate = 0F;
+            this.guna2PictureBox6.Location = new System.Drawing.Point(12, 12);
+            this.guna2PictureBox6.Margin = new System.Windows.Forms.Padding(12);
+            this.guna2PictureBox6.Name = "guna2PictureBox6";
+            this.guna2PictureBox6.Size = new System.Drawing.Size(59, 58);
+            this.guna2PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2PictureBox6.TabIndex = 0;
+            this.guna2PictureBox6.TabStop = false;
+            this.guna2PictureBox6.Click += new System.EventHandler(this.guna2PictureBox6_Click);
+            // 
+            // guna2PictureBox5
+            // 
+            this.guna2PictureBox5.BorderRadius = 30;
+            this.guna2PictureBox5.Image = global::Spotify.Properties.Resources.gleb;
+            this.guna2PictureBox5.ImageRotate = 0F;
+            this.guna2PictureBox5.Location = new System.Drawing.Point(12, 12);
+            this.guna2PictureBox5.Margin = new System.Windows.Forms.Padding(12);
+            this.guna2PictureBox5.Name = "guna2PictureBox5";
+            this.guna2PictureBox5.Size = new System.Drawing.Size(59, 58);
+            this.guna2PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2PictureBox5.TabIndex = 0;
+            this.guna2PictureBox5.TabStop = false;
+            this.guna2PictureBox5.Click += new System.EventHandler(this.guna2PictureBox5_Click);
+            // 
+            // guna2PictureBox1
+            // 
+            this.guna2PictureBox1.BorderRadius = 30;
+            this.guna2PictureBox1.Image = global::Spotify.Properties.Resources.saul;
+            this.guna2PictureBox1.ImageRotate = 0F;
+            this.guna2PictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(12);
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.Size = new System.Drawing.Size(59, 58);
+            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2PictureBox1.TabIndex = 0;
+            this.guna2PictureBox1.TabStop = false;
+            this.guna2PictureBox1.Click += new System.EventHandler(this.guna2PictureBox1_Click);
+            // 
+            // guna2PictureBox4
+            // 
+            this.guna2PictureBox4.Image = global::Spotify.Properties.Resources.icons8_library_50;
+            this.guna2PictureBox4.ImageRotate = 0F;
+            this.guna2PictureBox4.Location = new System.Drawing.Point(3, 3);
+            this.guna2PictureBox4.Name = "guna2PictureBox4";
+            this.guna2PictureBox4.Size = new System.Drawing.Size(30, 30);
+            this.guna2PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2PictureBox4.TabIndex = 2;
+            this.guna2PictureBox4.TabStop = false;
+            // 
+            // guna2PictureBox3
+            // 
+            this.guna2PictureBox3.Image = global::Spotify.Properties.Resources.icons8_search_30;
+            this.guna2PictureBox3.ImageRotate = 0F;
+            this.guna2PictureBox3.Location = new System.Drawing.Point(3, 3);
+            this.guna2PictureBox3.Name = "guna2PictureBox3";
+            this.guna2PictureBox3.Size = new System.Drawing.Size(30, 30);
+            this.guna2PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2PictureBox3.TabIndex = 0;
+            this.guna2PictureBox3.TabStop = false;
+            this.guna2PictureBox3.Click += new System.EventHandler(this.guna2PictureBox3_Click);
+            // 
+            // guna2PictureBox2
+            // 
+            this.guna2PictureBox2.Image = global::Spotify.Properties.Resources.icons8_house_48;
+            this.guna2PictureBox2.ImageRotate = 0F;
+            this.guna2PictureBox2.Location = new System.Drawing.Point(3, 3);
+            this.guna2PictureBox2.Name = "guna2PictureBox2";
+            this.guna2PictureBox2.Size = new System.Drawing.Size(30, 30);
+            this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2PictureBox2.TabIndex = 0;
+            this.guna2PictureBox2.TabStop = false;
+            this.guna2PictureBox2.Click += new System.EventHandler(this.guna2PictureBox2_Click);
+            // 
+            // guna2TrackBar2
+            // 
+            this.guna2TrackBar2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2TrackBar2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2TrackBar2.FillColor = System.Drawing.Color.White;
+            this.guna2TrackBar2.Location = new System.Drawing.Point(993, 41);
+            this.guna2TrackBar2.Name = "guna2TrackBar2";
+            this.guna2TrackBar2.Size = new System.Drawing.Size(92, 23);
+            this.guna2TrackBar2.TabIndex = 18;
+            this.guna2TrackBar2.ThumbColor = System.Drawing.Color.White;
+            this.guna2TrackBar2.Value = 25;
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.MenuText;
             this.ClientSize = new System.Drawing.Size(1140, 720);
+            this.Controls.Add(this.song_panel);
             this.Controls.Add(this.panelchildform);
             this.Controls.Add(this.guna2Panel2);
             this.Controls.Add(this.guna2Panel1);
@@ -619,27 +782,33 @@
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel4.ResumeLayout(false);
             this.guna2Panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).EndInit();
             this.guna2Panel3.ResumeLayout(false);
             this.guna2Panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
             this.guna2Panel2.ResumeLayout(false);
             this.guna2Panel6.ResumeLayout(false);
             this.guna2Panel14.ResumeLayout(false);
             this.guna2Panel14.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox7)).EndInit();
             this.guna2Panel12.ResumeLayout(false);
             this.guna2Panel12.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox6)).EndInit();
             this.guna2Panel10.ResumeLayout(false);
             this.guna2Panel10.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox5)).EndInit();
             this.guna2Panel7.ResumeLayout(false);
             this.guna2Panel7.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.guna2Panel5.ResumeLayout(false);
             this.guna2Panel5.PerformLayout();
+            this.song_panel.ResumeLayout(false);
+            this.song_panel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.song_picture)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -686,5 +855,17 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox5;
+        private Guna.UI2.WinForms.Guna2Panel song_panel;
+        private Guna.UI2.WinForms.Guna2TrackBar guna2TrackBar1;
+        private Guna.UI2.WinForms.Guna2HtmlLabel song_name;
+        private Guna.UI2.WinForms.Guna2PictureBox song_picture;
+        private Guna.UI2.WinForms.Guna2HtmlLabel song_rn_time;
+        private Guna.UI2.WinForms.Guna2HtmlLabel song_time;
+        private Guna.UI2.WinForms.Guna2ImageButton song_play_btn;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox8;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox9;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox10;
+        private Guna.UI2.WinForms.Guna2TrackBar guna2TrackBar2;
+        private System.Windows.Forms.Timer timer1;
     }
 }

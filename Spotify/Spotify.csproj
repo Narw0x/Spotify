@@ -291,5 +291,20 @@
   <ItemGroup>
     <None Include="Resources\flow_spin.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-play-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-pause-50-white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-next-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-previous-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-sound-24.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

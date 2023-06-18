@@ -15,6 +15,7 @@ namespace Spotify
         public Your_playlist()
         {
             InitializeComponent();
+            AutoScroll = true;
         }
 
         private void Your_playlist_Load(object sender, EventArgs e)
@@ -27,6 +28,7 @@ namespace Spotify
             if (guna2ImageButton2.Checked == false)
             {
                 guna2ImageButton2.Checked = true;
+                Dashboard.Self.playsong("Sativa");
             }
             else
             {
@@ -48,6 +50,7 @@ namespace Spotify
             if (guna2ImageButton3.Checked == false)
             {
                 guna2ImageButton3.Checked = true;
+                Dashboard.Self.playsong("Lsdycham");
             }
             else
             {
@@ -69,6 +72,7 @@ namespace Spotify
             if (guna2ImageButton4.Checked == false)
             {
                 guna2ImageButton4.Checked = true;
+                Dashboard.Self.playsong("Zhorel");
             }
             else
             {

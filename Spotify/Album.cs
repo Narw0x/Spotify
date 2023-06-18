@@ -15,6 +15,7 @@ namespace Spotify
         public Album()
         {
             InitializeComponent();
+            AutoScroll= true;
         }
 
         private void guna2ImageButton1_Click(object sender, EventArgs e)
@@ -46,6 +47,7 @@ namespace Spotify
             if (guna2ImageButton2.Checked == false)
             {
                 guna2ImageButton2.Checked = true;
+                Dashboard.Self.playsong("Kacey");
             }
             else
             {
@@ -67,6 +69,7 @@ namespace Spotify
             if (guna2ImageButton3.Checked == false)
             {
                 guna2ImageButton3.Checked = true;
+                Dashboard.Self.playsong("Stick");
             }
             else
             {
@@ -88,6 +91,7 @@ namespace Spotify
             if (guna2ImageButton4.Checked == false)
             {
                 guna2ImageButton4.Checked = true;
+                Dashboard.Self.playsong("Spin");
             }
             else
             {

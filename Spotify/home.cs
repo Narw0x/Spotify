@@ -12,6 +12,7 @@ namespace Spotify
 {
     public partial class Home : Form
     {
+
         public Home()
         {
             InitializeComponent();
@@ -67,6 +68,7 @@ namespace Spotify
         {
             if(guna2ImageButton1.Checked == false){
                 guna2ImageButton1.Checked = true;
+                Dashboard.Self.playsong("Oblaky");
             }
             else
             {
@@ -93,6 +95,7 @@ namespace Spotify
             if (guna2ImageButton2.Checked == false)
             {
                 guna2ImageButton2.Checked = true;
+                Dashboard.Self.playsong("Zhorel");
             }
             else
             {
@@ -118,6 +121,7 @@ namespace Spotify
             if (guna2ImageButton3.Checked == false)
             {
                 guna2ImageButton3.Checked = true;
+                Dashboard.Self.playsong("Hus");
             }
             else
             {
@@ -144,6 +148,7 @@ namespace Spotify
             if (guna2ImageButton4.Checked == false)
             {
                 guna2ImageButton4.Checked = true;
+                Dashboard.Self.playsong("Komander");
             }
             else
             {
@@ -162,6 +167,11 @@ namespace Spotify
             {
                 guna2ImageButton1.Checked = false;
             }
+        }
+
+        private void guna2HtmlLabel9_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

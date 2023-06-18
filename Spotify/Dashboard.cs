@@ -29,9 +29,9 @@ namespace Spotify
                 SendMessage(this.Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
             }
         }
-        
-        
 
+
+        public static Dashboard Self;
         public Dashboard()
         {
             InitializeComponent();
@@ -39,6 +39,8 @@ namespace Spotify
             this.FormBorderStyle = FormBorderStyle.None; // no borders
             this.DoubleBuffered = true;
             this.SetStyle(ControlStyles.ResizeRedraw, true); // this is to avoid visual artifacts
+            Self = this;
+            
         }
         private const int
            HTLEFT = 10,
@@ -133,6 +135,29 @@ namespace Spotify
         private void guna2PictureBox7_Click(object sender, EventArgs e)
         {
             openchildFrom(new Your_playlist());
+        }
+
+        private void guna2PictureBox3_Click(object sender, EventArgs e)
+        {
+            openchildFrom(new Search());
+        }
+
+        private void song_play_btn_Click(object sender, EventArgs e)
+        {
+            if(song_play_btn.Checked == false)
+            {
+                song_play_btn.Checked = true;
+            }
+            else
+            {
+                song_play_btn.Checked = false;
+            }
+        }
+
+
+        private void song_panel_Paint(object sender, PaintEventArgs e)
+        {
+
         }
 
         private void guna2Button1_Click(object sender, EventArgs e)
@@ -236,6 +261,12 @@ namespace Spotify
                 guna2Panel14.Visible = true;
             }
         }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+
+        }
+
         private void guna2Button3_Click(object sender, EventArgs e)
         {
             if (guna2Button3.Checked == false)
@@ -317,18 +348,115 @@ namespace Spotify
             childForm.TopLevel = false;
             childForm.FormBorderStyle = FormBorderStyle.None;
             childForm.Dock = DockStyle.Fill;
+            
             panelchildform.BorderRadius = 10;
             panelchildform.Controls.Add(childForm);
             panelchildform.Tag = childForm;
             childForm.BringToFront();
             childForm.Show();
         }
-        
 
+
+        public static string active_song = null;
+        public void playsong(string songName)
+        {
+            if(active_song != null)
+            {
+                active_song = null;
+            }
+            active_song = songName;
+            switch(active_song)
+            {
+                case "Oblaky":
+                    song_picture.Image = Properties.Resources.saul_oblaky;
+                    song_picture.SizeMode = PictureBoxSizeMode.StretchImage;
+                    song_name.Text = "Niekde v oblakoch";
+                    song_panel.Visible = true;
+                    panelchildform.Height = 567;                  
+                    break;
+                case "Zhorel":
+                    song_picture.Image = Properties.Resources.saul_motyl;
+                    song_picture.SizeMode = PictureBoxSizeMode.StretchImage;
+                    song_name.Text = "Včera mi zhorel dom";
+                    song_panel.Visible = true;
+                    panelchildform.Height = 567;                   
+                    break;
+                case "Hus":
+                    song_picture.Image = Properties.Resources.gleb_hus;
+                    song_picture.SizeMode = PictureBoxSizeMode.StretchImage;
+                    song_name.Text = "Šedá hus";
+                    song_panel.Visible = true;
+                    panelchildform.Height = 567;
+                    break;
+                case "Komander":
+                    song_picture.Image = Properties.Resources.gleb_komander;
+                    song_picture.SizeMode = PictureBoxSizeMode.StretchImage;
+                    song_name.Text = "KOMANDER PUMP IT UP";
+                    song_panel.Visible = true;
+                    panelchildform.Height = 567;
+                    break;
+                case "Sativa":
+                    song_picture.Image = Properties.Resources.lsdycham;
+                    song_picture.SizeMode = PictureBoxSizeMode.StretchImage;
+                    song_name.Text = "SATIVA";
+                    song_panel.Visible = true;
+                    panelchildform.Height = 567;
+                    break;
+                case "Lsdycham":
+                    song_picture.Image = Properties.Resources.lsdycham;
+                    song_picture.SizeMode = PictureBoxSizeMode.StretchImage;
+                    song_name.Text = "LSDÝCHAM";
+                    song_panel.Visible = true;
+                    panelchildform.Height = 567;
+                    break;
+                case "Kacey":
+                    song_picture.Image = Properties.Resources.flow_kacey;
+                    song_picture.SizeMode = PictureBoxSizeMode.StretchImage;
+                    song_name.Text = "Kacey talk";
+                    song_panel.Visible = true;
+                    panelchildform.Height = 567;
+                    break;
+                case "Stick":
+                    song_picture.Image = Properties.Resources.flow_stick;
+                    song_picture.SizeMode = PictureBoxSizeMode.StretchImage;
+                    song_name.Text = "Stick to the Models";
+                    song_panel.Visible = true;
+                    panelchildform.Height = 567;
+                    break;
+                case "Spin":
+                    song_picture.Image = Properties.Resources.flow_spin;
+                    song_picture.SizeMode = PictureBoxSizeMode.StretchImage;
+                    song_name.Text = "Spin Bout U";
+                    song_panel.Visible = true;
+                    panelchildform.Height = 567;
+                    break;
+                case "Slnovrat":
+                    song_picture.Image = Properties.Resources.saul_slnovrat;
+                    song_picture.SizeMode = PictureBoxSizeMode.StretchImage;
+                    song_name.Text = "Slnovrat";
+                    song_panel.Visible = true;
+                    panelchildform.Height = 567;
+                    break;
+                case "G":
+                    song_picture.Image = Properties.Resources.gleb_G;
+                    song_picture.SizeMode = PictureBoxSizeMode.StretchImage;
+                    song_name.Text = "HEY G!";
+                    song_panel.Visible = true;
+                    panelchildform.Height = 567;
+                    break;
+                default:
+                    song_panel.Visible = false;
+                    break;
+            }
+
+        }
         
         private void Dashboard_Load(object sender, EventArgs e)
         {
             openchildFrom(new Home());
+            if(active_song == null) {
+                song_panel.Visible = false;
+            }
             
         }
     }
