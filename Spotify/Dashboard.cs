@@ -1,9 +1,11 @@
-﻿using System;
+﻿using Guna.UI2.WinForms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Numerics;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,6 +15,9 @@ namespace Spotify
 {
     public partial class Dashboard : Form
     {
+
+        WMPLib.WindowsMediaPlayer player = new WMPLib.WindowsMediaPlayer();
+
         [DllImportAttribute("user32.dll")]
         public static extern int SendMessage(IntPtr hWnd, int Msg, int wParam, int LPAR);
         [DllImportAttribute("user32.dll")]
@@ -147,10 +152,12 @@ namespace Spotify
             if(song_play_btn.Checked == false)
             {
                 song_play_btn.Checked = true;
+                player.controls.play();
             }
             else
             {
                 song_play_btn.Checked = false;
+                player.controls.pause();
             }
         }
 
@@ -262,9 +269,88 @@ namespace Spotify
             }
         }
 
+       
         private void timer1_Tick(object sender, EventArgs e)
         {
+            if (player.playState == WMPLib.WMPPlayState.wmppsPlaying)
+            {
+                guna2TrackBar1.Maximum = (int)player.controls.currentItem.duration;
+                int currentPosition = (int)player.controls.currentPosition;
+                int duration = (int)player.controls.currentItem.duration;
 
+                int currentMinutes = currentPosition / 60;
+                int currentSeconds = currentPosition % 60;
+
+                int durationMinutes = duration / 60;
+                int durationSeconds = duration % 60;
+
+                song_rn_time.Text = string.Format("{0}:{1:D2}", currentMinutes, currentSeconds);
+                song_time.Text = string.Format("{0}:{1:D2}", durationMinutes, durationSeconds);
+
+                if (guna2TrackBar1.Value != currentPosition)
+                {
+                    guna2TrackBar1.Value = currentPosition;
+                }
+
+                if(guna2TrackBar1.Value == guna2TrackBar1.Maximum)
+                {
+                    string[] songs = { "Oblaky", "Zhorel", "Hus", "Komander", "Sativa", "Lsdycham", "Kacey", "Stick", "Spin", "Slnovrat", "G" };
+                    Random rand = new Random();
+                    int index = rand.Next(songs.Length);
+                    playsong(songs[index]);
+                }
+            }
+        }
+
+       
+
+        private void axWindowsMediaPlayer1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2PictureBox9_Click(object sender, EventArgs e)
+        {
+            string[] songs = { "Oblaky", "Zhorel", "Hus", "Komander", "Sativa", "Lsdycham", "Kacey", "Stick", "Spin", "Slnovrat", "G" };
+            Random rand = new Random();
+            int index = rand.Next(songs.Length);
+            playsong(songs[index]);
+        }
+
+        private void guna2PictureBox8_Click(object sender, EventArgs e)
+        {
+            string[] songs = { "Oblaky", "Zhorel", "Hus", "Komander", "Sativa", "Lsdycham", "Kacey", "Stick", "Spin", "Slnovrat", "G" };
+            Random rand = new Random();
+            int index = rand.Next(songs.Length);
+            playsong(songs[index]);
+        }
+
+        private void guna2TrackBar1_Scroll(object sender, ScrollEventArgs e)
+        {
+            if (player.playState == WMPLib.WMPPlayState.wmppsPlaying)
+            {
+                player.controls.currentPosition = guna2TrackBar1.Value;
+            }
+        }
+
+        private void guna2ProgressBar1_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void song_rn_time_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void song_time_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2TrackBar2_Scroll(object sender, ScrollEventArgs e)
+        {
+            player.settings.volume = guna2TrackBar2.Value;
         }
 
         private void guna2Button3_Click(object sender, EventArgs e)
@@ -372,13 +458,18 @@ namespace Spotify
                     song_picture.SizeMode = PictureBoxSizeMode.StretchImage;
                     song_name.Text = "Niekde v oblakoch";
                     song_panel.Visible = true;
-                    panelchildform.Height = 567;                  
+                    player.URL = "C:/Users/marti/source/repos/Spotify/assets/Saul-NiekdeVOblakoch.wav";
+                    player.controls.play();
+                    panelchildform.Height = 567;
+                    panelchildform.Width = 773;
                     break;
                 case "Zhorel":
                     song_picture.Image = Properties.Resources.saul_motyl;
                     song_picture.SizeMode = PictureBoxSizeMode.StretchImage;
                     song_name.Text = "Včera mi zhorel dom";
                     song_panel.Visible = true;
+                    player.URL = "C:/Users/marti/source/repos/Spotify/assets/Saul-VčeraMiZhorelDom.wav";
+                    player.controls.play();
                     panelchildform.Height = 567;                   
                     break;
                 case "Hus":
@@ -386,6 +477,8 @@ namespace Spotify
                     song_picture.SizeMode = PictureBoxSizeMode.StretchImage;
                     song_name.Text = "Šedá hus";
                     song_panel.Visible = true;
+                    player.URL = "C:/Users/marti/source/repos/Spotify/assets/bigboygleb-šedáhus.wav";
+                    player.controls.play();
                     panelchildform.Height = 567;
                     break;
                 case "Komander":
@@ -393,6 +486,8 @@ namespace Spotify
                     song_picture.SizeMode = PictureBoxSizeMode.StretchImage;
                     song_name.Text = "KOMANDER PUMP IT UP";
                     song_panel.Visible = true;
+                    player.URL = "C:/Users/marti/source/repos/Spotify/assets/KOMANDERPUMPITUP.wav";
+                    player.controls.play();
                     panelchildform.Height = 567;
                     break;
                 case "Sativa":
@@ -400,6 +495,8 @@ namespace Spotify
                     song_picture.SizeMode = PictureBoxSizeMode.StretchImage;
                     song_name.Text = "SATIVA";
                     song_panel.Visible = true;
+                    player.URL = "C:/Users/marti/source/repos/Spotify/assets/SATIVA.wav"; 
+                    player.controls.play();
                     panelchildform.Height = 567;
                     break;
                 case "Lsdycham":
@@ -407,6 +504,8 @@ namespace Spotify
                     song_picture.SizeMode = PictureBoxSizeMode.StretchImage;
                     song_name.Text = "LSDÝCHAM";
                     song_panel.Visible = true;
+                    player.URL = "C:/Users/marti/source/repos/Spotify/assets/LSDÝCHAM.wav"; 
+                    player.controls.play();
                     panelchildform.Height = 567;
                     break;
                 case "Kacey":
@@ -414,6 +513,8 @@ namespace Spotify
                     song_picture.SizeMode = PictureBoxSizeMode.StretchImage;
                     song_name.Text = "Kacey talk";
                     song_panel.Visible = true;
+                    player.URL = "C:/Users/marti/source/repos/Spotify/assets/YoungBoyNeverBrokeAgain-Kaceytalk.wav"; 
+                    player.controls.play();
                     panelchildform.Height = 567;
                     break;
                 case "Stick":
@@ -421,6 +522,8 @@ namespace Spotify
                     song_picture.SizeMode = PictureBoxSizeMode.StretchImage;
                     song_name.Text = "Stick to the Models";
                     song_panel.Visible = true;
+                    player.URL = "C:/Users/marti/source/repos/Spotify/assets/Future-SticktotheModels.wav"; 
+                    player.controls.play();
                     panelchildform.Height = 567;
                     break;
                 case "Spin":
@@ -428,6 +531,8 @@ namespace Spotify
                     song_picture.SizeMode = PictureBoxSizeMode.StretchImage;
                     song_name.Text = "Spin Bout U";
                     song_panel.Visible = true;
+                    player.URL = "C:/Users/marti/source/repos/Spotify/assets/Drake21Savage-SpinBoutU.wav"; 
+                    player.controls.play();
                     panelchildform.Height = 567;
                     break;
                 case "Slnovrat":
@@ -435,6 +540,8 @@ namespace Spotify
                     song_picture.SizeMode = PictureBoxSizeMode.StretchImage;
                     song_name.Text = "Slnovrat";
                     song_panel.Visible = true;
+                    player.URL = "C:/Users/marti/source/repos/Spotify/assets/Slnovrat.wav"; 
+                    player.controls.play();
                     panelchildform.Height = 567;
                     break;
                 case "G":
@@ -442,6 +549,8 @@ namespace Spotify
                     song_picture.SizeMode = PictureBoxSizeMode.StretchImage;
                     song_name.Text = "HEY G!";
                     song_panel.Visible = true;
+                    player.URL = "C:/Users/marti/source/repos/Spotify/assets/glebxsepar-HEYG!.wav"; 
+                    player.controls.play();
                     panelchildform.Height = 567;
                     break;
                 default:
@@ -457,7 +566,9 @@ namespace Spotify
             if(active_song == null) {
                 song_panel.Visible = false;
             }
-            
+            guna2TrackBar1.Scroll += guna2TrackBar1_Scroll;
+            guna2TrackBar2.Scroll += guna2TrackBar2_Scroll;
+
         }
     }
 }

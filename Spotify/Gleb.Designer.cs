@@ -76,8 +76,9 @@
             this.guna2Panel1.Controls.Add(this.guna2Panel2);
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(765, 657);
+            this.guna2Panel1.Size = new System.Drawing.Size(763, 657);
             this.guna2Panel1.TabIndex = 0;
+            this.guna2Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel1_Paint);
             // 
             // guna2Panel3
             // 
@@ -96,9 +97,9 @@
             this.guna2Panel3.CustomizableEdges.TopRight = false;
             this.guna2Panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.guna2Panel3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-            this.guna2Panel3.Location = new System.Drawing.Point(0, 254);
+            this.guna2Panel3.Location = new System.Drawing.Point(0, 244);
             this.guna2Panel3.Name = "guna2Panel3";
-            this.guna2Panel3.Size = new System.Drawing.Size(765, 403);
+            this.guna2Panel3.Size = new System.Drawing.Size(763, 413);
             this.guna2Panel3.TabIndex = 1;
             // 
             // guna2HtmlLabel4
@@ -438,7 +439,7 @@
             this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel2.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.Size = new System.Drawing.Size(765, 255);
+            this.guna2Panel2.Size = new System.Drawing.Size(763, 264);
             this.guna2Panel2.TabIndex = 0;
             // 
             // guna2PictureBox1
@@ -448,7 +449,7 @@
             this.guna2PictureBox1.ImageRotate = 0F;
             this.guna2PictureBox1.Location = new System.Drawing.Point(0, 0);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(765, 439);
+            this.guna2PictureBox1.Size = new System.Drawing.Size(763, 439);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox1.TabIndex = 0;
             this.guna2PictureBox1.TabStop = false;
@@ -457,7 +458,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(763, 657);
+            this.ClientSize = new System.Drawing.Size(763, 654);
             this.Controls.Add(this.guna2Panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Gleb";

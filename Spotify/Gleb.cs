@@ -104,5 +104,10 @@ namespace Spotify
                 guna2ImageButton2.Checked = false;
             }
         }
+
+        private void guna2Panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
