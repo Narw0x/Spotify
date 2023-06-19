@@ -460,6 +460,7 @@ namespace Spotify
                     song_panel.Visible = true;
                     player.URL = "C:/Users/marti/source/repos/Spotify/assets/Saul-NiekdeVOblakoch.wav";
                     player.controls.play();
+                    song_play_btn.Checked = true;
                     panelchildform.Height = 567;
                     panelchildform.Width = 773;
                     break;
@@ -470,6 +471,7 @@ namespace Spotify
                     song_panel.Visible = true;
                     player.URL = "C:/Users/marti/source/repos/Spotify/assets/Saul-VčeraMiZhorelDom.wav";
                     player.controls.play();
+                    song_play_btn.Checked = true;
                     panelchildform.Height = 567;                   
                     break;
                 case "Hus":
@@ -477,6 +479,7 @@ namespace Spotify
                     song_picture.SizeMode = PictureBoxSizeMode.StretchImage;
                     song_name.Text = "Šedá hus";
                     song_panel.Visible = true;
+                    song_play_btn.Checked = true;
                     player.URL = "C:/Users/marti/source/repos/Spotify/assets/bigboygleb-šedáhus.wav";
                     player.controls.play();
                     panelchildform.Height = 567;
@@ -486,6 +489,7 @@ namespace Spotify
                     song_picture.SizeMode = PictureBoxSizeMode.StretchImage;
                     song_name.Text = "KOMANDER PUMP IT UP";
                     song_panel.Visible = true;
+                    song_play_btn.Checked = true;
                     player.URL = "C:/Users/marti/source/repos/Spotify/assets/KOMANDERPUMPITUP.wav";
                     player.controls.play();
                     panelchildform.Height = 567;
@@ -495,6 +499,7 @@ namespace Spotify
                     song_picture.SizeMode = PictureBoxSizeMode.StretchImage;
                     song_name.Text = "SATIVA";
                     song_panel.Visible = true;
+                    song_play_btn.Checked = true;
                     player.URL = "C:/Users/marti/source/repos/Spotify/assets/SATIVA.wav"; 
                     player.controls.play();
                     panelchildform.Height = 567;
@@ -504,6 +509,7 @@ namespace Spotify
                     song_picture.SizeMode = PictureBoxSizeMode.StretchImage;
                     song_name.Text = "LSDÝCHAM";
                     song_panel.Visible = true;
+                    song_play_btn.Checked = true;
                     player.URL = "C:/Users/marti/source/repos/Spotify/assets/LSDÝCHAM.wav"; 
                     player.controls.play();
                     panelchildform.Height = 567;
@@ -513,6 +519,7 @@ namespace Spotify
                     song_picture.SizeMode = PictureBoxSizeMode.StretchImage;
                     song_name.Text = "Kacey talk";
                     song_panel.Visible = true;
+                    song_play_btn.Checked = true;
                     player.URL = "C:/Users/marti/source/repos/Spotify/assets/YoungBoyNeverBrokeAgain-Kaceytalk.wav"; 
                     player.controls.play();
                     panelchildform.Height = 567;
@@ -522,6 +529,7 @@ namespace Spotify
                     song_picture.SizeMode = PictureBoxSizeMode.StretchImage;
                     song_name.Text = "Stick to the Models";
                     song_panel.Visible = true;
+                    song_play_btn.Checked = true;
                     player.URL = "C:/Users/marti/source/repos/Spotify/assets/Future-SticktotheModels.wav"; 
                     player.controls.play();
                     panelchildform.Height = 567;
@@ -531,6 +539,7 @@ namespace Spotify
                     song_picture.SizeMode = PictureBoxSizeMode.StretchImage;
                     song_name.Text = "Spin Bout U";
                     song_panel.Visible = true;
+                    song_play_btn.Checked = true;
                     player.URL = "C:/Users/marti/source/repos/Spotify/assets/Drake21Savage-SpinBoutU.wav"; 
                     player.controls.play();
                     panelchildform.Height = 567;
@@ -540,6 +549,7 @@ namespace Spotify
                     song_picture.SizeMode = PictureBoxSizeMode.StretchImage;
                     song_name.Text = "Slnovrat";
                     song_panel.Visible = true;
+                    song_play_btn.Checked = true;
                     player.URL = "C:/Users/marti/source/repos/Spotify/assets/Slnovrat.wav"; 
                     player.controls.play();
                     panelchildform.Height = 567;
@@ -549,6 +559,7 @@ namespace Spotify
                     song_picture.SizeMode = PictureBoxSizeMode.StretchImage;
                     song_name.Text = "HEY G!";
                     song_panel.Visible = true;
+                    song_play_btn.Checked = true;
                     player.URL = "C:/Users/marti/source/repos/Spotify/assets/glebxsepar-HEYG!.wav"; 
                     player.controls.play();
                     panelchildform.Height = 567;
