@@ -225,7 +225,7 @@
             this.guna2TextBox4.Name = "guna2TextBox4";
             this.guna2TextBox4.PasswordChar = '*';
             this.guna2TextBox4.PlaceholderForeColor = System.Drawing.Color.Gray;
-            this.guna2TextBox4.PlaceholderText = "Password again";
+            this.guna2TextBox4.PlaceholderText = "Use at least 8 characters";
             this.guna2TextBox4.SelectedText = "";
             this.guna2TextBox4.Size = new System.Drawing.Size(414, 47);
             this.guna2TextBox4.TabIndex = 8;
@@ -286,7 +286,7 @@
             this.guna2TextBox3.Name = "guna2TextBox3";
             this.guna2TextBox3.PasswordChar = '*';
             this.guna2TextBox3.PlaceholderForeColor = System.Drawing.Color.Gray;
-            this.guna2TextBox3.PlaceholderText = "Password";
+            this.guna2TextBox3.PlaceholderText = "Use at least 8 characters";
             this.guna2TextBox3.SelectedText = "";
             this.guna2TextBox3.Size = new System.Drawing.Size(414, 48);
             this.guna2TextBox3.TabIndex = 8;
@@ -670,12 +670,13 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.label12.Location = new System.Drawing.Point(196, 175);
+            this.label12.ForeColor = System.Drawing.Color.Red;
+            this.label12.Location = new System.Drawing.Point(181, 172);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(229, 20);
+            this.label12.Size = new System.Drawing.Size(265, 20);
             this.label12.TabIndex = 14;
-            this.label12.Text = "Registration failed.. Try it again";
+            this.label12.Text = "Registration failed.. Try it again later";
+            this.label12.Visible = false;
             // 
             // label11
             // 

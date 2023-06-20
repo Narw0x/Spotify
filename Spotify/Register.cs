@@ -234,8 +234,8 @@ namespace Spotify
             {
 
                 conn.Close();
-                MessageBox.Show(" " + ex + " ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                label11.Visible = true;
+                
+                label12.Visible = true;
             }
         }
         
