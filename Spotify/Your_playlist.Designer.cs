@@ -53,7 +53,6 @@
             this.guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2PictureBox4 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2HtmlLabel11 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2ImageButton1 = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -92,7 +91,6 @@
             this.guna2Panel3.Controls.Add(this.guna2HtmlLabel12);
             this.guna2Panel3.Controls.Add(this.guna2Panel5);
             this.guna2Panel3.Controls.Add(this.guna2Panel4);
-            this.guna2Panel3.Controls.Add(this.guna2ImageButton1);
             this.guna2Panel3.CustomizableEdges.TopLeft = false;
             this.guna2Panel3.CustomizableEdges.TopRight = false;
             this.guna2Panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -112,7 +110,7 @@
             this.guna2Panel6.Controls.Add(this.guna2PictureBox3);
             this.guna2Panel6.Controls.Add(this.guna2HtmlLabel18);
             this.guna2Panel6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            this.guna2Panel6.Location = new System.Drawing.Point(12, 327);
+            this.guna2Panel6.Location = new System.Drawing.Point(19, 274);
             this.guna2Panel6.Name = "guna2Panel6";
             this.guna2Panel6.Size = new System.Drawing.Size(730, 56);
             this.guna2Panel6.TabIndex = 111;
@@ -189,7 +187,7 @@
             this.guna2HtmlLabel15.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel15.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel15.ForeColor = System.Drawing.Color.Gray;
-            this.guna2HtmlLabel15.Location = new System.Drawing.Point(520, 146);
+            this.guna2HtmlLabel15.Location = new System.Drawing.Point(527, 93);
             this.guna2HtmlLabel15.Name = "guna2HtmlLabel15";
             this.guna2HtmlLabel15.Size = new System.Drawing.Size(38, 22);
             this.guna2HtmlLabel15.TabIndex = 110;
@@ -200,7 +198,7 @@
             this.guna2HtmlLabel14.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel14.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel14.ForeColor = System.Drawing.Color.Gray;
-            this.guna2HtmlLabel14.Location = new System.Drawing.Point(160, 146);
+            this.guna2HtmlLabel14.Location = new System.Drawing.Point(167, 93);
             this.guna2HtmlLabel14.Name = "guna2HtmlLabel14";
             this.guna2HtmlLabel14.Size = new System.Drawing.Size(81, 22);
             this.guna2HtmlLabel14.TabIndex = 109;
@@ -211,7 +209,7 @@
             this.guna2HtmlLabel13.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel13.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel13.ForeColor = System.Drawing.Color.Gray;
-            this.guna2HtmlLabel13.Location = new System.Drawing.Point(39, 146);
+            this.guna2HtmlLabel13.Location = new System.Drawing.Point(46, 93);
             this.guna2HtmlLabel13.Name = "guna2HtmlLabel13";
             this.guna2HtmlLabel13.Size = new System.Drawing.Size(12, 22);
             this.guna2HtmlLabel13.TabIndex = 108;
@@ -221,7 +219,7 @@
             // 
             this.guna2Separator1.BackColor = System.Drawing.Color.Transparent;
             this.guna2Separator1.FillColor = System.Drawing.Color.DimGray;
-            this.guna2Separator1.Location = new System.Drawing.Point(12, 172);
+            this.guna2Separator1.Location = new System.Drawing.Point(19, 119);
             this.guna2Separator1.Name = "guna2Separator1";
             this.guna2Separator1.Size = new System.Drawing.Size(730, 10);
             this.guna2Separator1.TabIndex = 107;
@@ -231,7 +229,7 @@
             this.guna2HtmlLabel12.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel12.Font = new System.Drawing.Font("Segoe UI", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel12.ForeColor = System.Drawing.SystemColors.Control;
-            this.guna2HtmlLabel12.Location = new System.Drawing.Point(12, 73);
+            this.guna2HtmlLabel12.Location = new System.Drawing.Point(19, 20);
             this.guna2HtmlLabel12.Name = "guna2HtmlLabel12";
             this.guna2HtmlLabel12.Size = new System.Drawing.Size(139, 67);
             this.guna2HtmlLabel12.TabIndex = 106;
@@ -247,7 +245,7 @@
             this.guna2Panel5.Controls.Add(this.guna2PictureBox2);
             this.guna2Panel5.Controls.Add(this.guna2HtmlLabel10);
             this.guna2Panel5.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            this.guna2Panel5.Location = new System.Drawing.Point(12, 256);
+            this.guna2Panel5.Location = new System.Drawing.Point(19, 203);
             this.guna2Panel5.Name = "guna2Panel5";
             this.guna2Panel5.Size = new System.Drawing.Size(730, 56);
             this.guna2Panel5.TabIndex = 105;
@@ -329,7 +327,7 @@
             this.guna2Panel4.Controls.Add(this.guna2PictureBox4);
             this.guna2Panel4.Controls.Add(this.guna2HtmlLabel11);
             this.guna2Panel4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            this.guna2Panel4.Location = new System.Drawing.Point(12, 185);
+            this.guna2Panel4.Location = new System.Drawing.Point(19, 132);
             this.guna2Panel4.Name = "guna2Panel4";
             this.guna2Panel4.Size = new System.Drawing.Size(730, 56);
             this.guna2Panel4.TabIndex = 104;
@@ -400,24 +398,6 @@
             this.guna2HtmlLabel11.Size = new System.Drawing.Size(12, 23);
             this.guna2HtmlLabel11.TabIndex = 7;
             this.guna2HtmlLabel11.Text = "1";
-            // 
-            // guna2ImageButton1
-            // 
-            this.guna2ImageButton1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ImageButton1.CheckedState.Image = global::Spotify.Properties.Resources.icons8_heart_30;
-            this.guna2ImageButton1.CheckedState.ImageSize = new System.Drawing.Size(30, 30);
-            this.guna2ImageButton1.HoverState.Image = global::Spotify.Properties.Resources.icons8_heart_24;
-            this.guna2ImageButton1.HoverState.ImageSize = new System.Drawing.Size(30, 30);
-            this.guna2ImageButton1.Image = global::Spotify.Properties.Resources.icons8_heart_24;
-            this.guna2ImageButton1.ImageOffset = new System.Drawing.Point(0, 0);
-            this.guna2ImageButton1.ImageRotate = 0F;
-            this.guna2ImageButton1.ImageSize = new System.Drawing.Size(30, 30);
-            this.guna2ImageButton1.Location = new System.Drawing.Point(12, 24);
-            this.guna2ImageButton1.Name = "guna2ImageButton1";
-            this.guna2ImageButton1.PressedState.Image = global::Spotify.Properties.Resources.icons8_heart_30;
-            this.guna2ImageButton1.PressedState.ImageSize = new System.Drawing.Size(30, 30);
-            this.guna2ImageButton1.Size = new System.Drawing.Size(64, 54);
-            this.guna2ImageButton1.TabIndex = 1;
             // 
             // guna2Panel2
             // 
@@ -525,7 +505,6 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel6;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox4;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel11;
-        private Guna.UI2.WinForms.Guna2ImageButton guna2ImageButton1;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
